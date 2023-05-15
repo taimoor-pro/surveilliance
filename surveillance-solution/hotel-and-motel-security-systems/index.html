@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en-US" class="pp-offcanvas-content-widget" style="height: 100%;"><head><meta charset="UTF-8"><script async="" src="//cse.google.com/adsense/search/async-ads.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-P4HFXFQ"></script><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v20.0 (Yoast SEO v20.2.1) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Hotel & Motel Security Systems Site Security</title>
+	<meta name="description" content="Hotel & Motel Security Systems sites require security for many reasons including liability, theft, property damage more. Stealth's live video monitoring security solutions can help solve this problems at a fraction of the cost of security guards.">
+	<link rel="canonical" href="https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Hotel & Motel Security Systems Security Solutions">
+	<meta property="og:description" content="Hotel & Motel Security Systems sites require security for many reasons including liability, theft, property damage more. Stealth's live video monitoring security solutions can help solve this problems at a fraction of the cost of security guards.">
+	<meta property="og:url" content="https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems">
+	<meta property="og:site_name" content="Stealth Monitoring">
+	<meta property="article:modified_time" content="2023-02-13T19:01:40+00:00">
+	<meta property="og:image" content="https://stealthmonitoring.com/wp-content/uploads/2022/08/Hotel & Motel Security Systems_Security_OG.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="13 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems","url":"https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems","name":"Hotel & Motel Security Systems Site Security and Live Video Surveillance Solutions | Stealth Monitoring","isPartOf":{"@id":"https://stealthmonitoring.com/#website"},"primaryImageOfPage":{"@id":"https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems#primaryimage"},"image":{"@id":"https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems#primaryimage"},"thumbnailUrl":"https://stealthmonitoring.com/wp-content/uploads/2021/12/production.craftcms.stealthmonitoring_heroes_mobile-store-security-systems-hero.jpg","datePublished":"2021-11-22T08:55:00+00:00","dateModified":"2023-02-13T19:01:40+00:00","description":"Hotel & Motel Security Systems sites require security for many reasons including liability, theft, property damage more. Stealth's live video monitoring security solutions can help solve this problems at a fraction of the cost of security guards.","breadcrumb":{"@id":"https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems"]}],"video":[{"@id":"https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems#video"}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems#primaryimage","url":"https://stealthmonitoring.com/wp-content/uploads/2021/12/production.craftcms.stealthmonitoring_heroes_mobile-store-security-systems-hero.jpg","contentUrl":"https://stealthmonitoring.com/wp-content/uploads/2021/12/production.craftcms.stealthmonitoring_heroes_mobile-store-security-systems-hero.jpg","width":1320,"height":344},{"@type":"BreadcrumbList","@id":"https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://stealthmonitoring.com/"},{"@type":"ListItem","position":2,"name":"Surveillance Solution","item":"https://stealthmonitoring.com/surveillance-solution"},{"@type":"ListItem","position":3,"name":"Hotel & Motel Security Systems Security Solutions"}]},{"@type":"WebSite","@id":"https://stealthmonitoring.com/#website","url":"https://stealthmonitoring.com/","name":"Stealth Monitoring","description":"Surveillance Videos, Security White Papers, Monitoring Case Studies, Live Video Monitoring Blogs","publisher":{"@id":"https://stealthmonitoring.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://stealthmonitoring.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://stealthmonitoring.com/#organization","name":"Stealth Monitoring","url":"https://stealthmonitoring.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://stealthmonitoring.com/#/schema/logo/image/","url":"https://stealthmonitoring.com/wp-content/uploads/2022/03/Logo-Primary-protype-newsletter.png","contentUrl":"https://stealthmonitoring.com/wp-content/uploads/2022/03/Logo-Primary-protype-newsletter.png","width":236,"height":100,"caption":"Stealth Monitoring"},"image":{"@id":"https://stealthmonitoring.com/#/schema/logo/image/"}},{"@type":"VideoObject","@id":"https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems#video","name":"Hotel & Motel Security Systems Site Security and Live Video Surveillance Solutions | Stealth Monitoring","isPartOf":{"@id":"https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems"},"thumbnailUrl":"https://stealthmonitoring.com/wp-content/uploads/2021/11/jzxxvypockw.jpg","description":"Hotel & Motel Security Systems sites require security for many reasons including liability, theft, property damage more. Stealth's live video monitoring security solutions can help solve this problems at a fraction of the cost of security guards.","uploadDate":"2021-11-22","width":480,"height":270,"embedUrl":"https://www.youtube.com/embed/jZxxvyPOckw","duration":"PT3M16S","isFamilyFriendly":"true","inLanguage":"en-US"}]}</script>
+	<meta property="og:video" content="https://www.youtube.com/embed/jZxxvyPOckw">
+	<meta property="og:video:type" content="text/html">
+	<meta property="og:video:duration" content="196">
+	<meta property="og:video:width" content="480">
+	<meta property="og:video:height" content="270">
+	<meta property="ya:ovs:adult" content="false">
+	<meta property="ya:ovs:upload_date" content="2021-11-22T08:55:00+00:00">
+	<meta property="ya:ovs:allow_embed" content="true">
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="dns-prefetch" href="//pro.fontawesome.com">
+
+<link rel="alternate" type="application/rss+xml" title="Stealth Monitoring » Feed" href="https://stealthmonitoring.com/feed">
+<link rel="alternate" type="application/rss+xml" title="Stealth Monitoring » Comments Feed" href="https://stealthmonitoring.com/comments/feed">
+<link rel="alternate" type="text/calendar" title="Stealth Monitoring » iCal Feed" href="https://stealthmonitoring.com/events/?ical=1">
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css" media="all">
+.wpautoterms-footer{background-color:#ffffff;text-align:center;}
+.wpautoterms-footer a{color:#000000;font-family:Arial, sans-serif;font-size:14px;}
+.wpautoterms-footer .separator{color:#cccccc;font-family:Arial, sans-serif;font-size:14px;}</style>
+<link data-minify="1" rel="stylesheet" id="gtranslate-style-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/gtranslate/gtranslate-style16.css?ver=1681400562" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://stealthmonitoring.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1" media="all">
+<style id="wp-block-library-theme-inline-css">
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:"0 0 1em 0"}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<link data-minify="1" rel="stylesheet" id="mpp_gutenberg-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/metronet-profile-picture/dist/blocks.style.build.css?ver=1681400561" media="all">
+<link rel="stylesheet" id="classic-theme-styles-css" href="https://stealthmonitoring.com/wp-includes/css/classic-themes.min.css?ver=1" media="all">
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel="stylesheet" id="wpautoterms_css-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/auto-terms-of-service-and-privacy-policy/css/wpautoterms.css?ver=1681400562" media="all">
+<link data-minify="1" rel="stylesheet" id="icon-1638380648-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/uploads/bb-plugin/icons/icon-1638380648/style.css?ver=1681400561" media="all">
+<link data-minify="1" rel="stylesheet" id="dashicons-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-includes/css/dashicons.min.css?ver=1681400561" media="all">
+<link rel="stylesheet" id="pp-jquery-fancybox-css" href="https://stealthmonitoring.com/wp-content/plugins/bbpowerpack/assets/css/jquery.fancybox.min.css?ver=3.5.4" media="all">
+<link data-minify="1" rel="stylesheet" id="ultimate-icons-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/uploads/bb-plugin/icons/ultimate-icons/style.css?ver=1681400561" media="all">
+<link data-minify="1" rel="stylesheet" id="font-awesome-5-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/releases/v5.15.4/css/all.css?ver=1681400561" media="all">
+<link data-minify="1" rel="stylesheet" id="pp-owl-carousel-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/bbpowerpack/assets/css/owl.carousel.css?ver=1681400603" media="all">
+<link data-minify="1" rel="stylesheet" id="pp-owl-carousel-theme-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/bbpowerpack/assets/css/owl.theme.css?ver=1681400603" media="all">
+<link data-minify="1" rel="stylesheet" id="fl-builder-layout-18035-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/18035-layout.css?ver=1681401814" media="all">
+<link rel="stylesheet" id="geot-css-css" href="https://stealthmonitoring.com/wp-content/plugins/geotargetingwp/public/css/geotarget-public.min.css?ver=6.1.1" media="all">
+<link rel="stylesheet" id="geotf-css" href="https://stealthmonitoring.com/wp-content/plugins/geotargetingwp/addons/geo-flags/assets/css/flag-icon.min.css?ver=1.0.7" media="all">
+<link data-minify="1" rel="stylesheet" id="wpos-slick-style-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/timeline-and-history-slider/assets/css/slick.css?ver=1681400561" media="all">
+<link data-minify="1" rel="stylesheet" id="tahs-public-style-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/timeline-and-history-slider/assets/css/slick-slider-style.css?ver=1681400562" media="all">
+<link data-minify="1" rel="stylesheet" id="fl-builder-layout-bundle-be35dedb69b718f4623efeeb5dcd5d79-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/be35dedb69b718f4623efeeb5dcd5d79-layout-bundle.css?ver=1681401814" media="all">
+<link data-minify="1" rel="stylesheet" id="megamenu-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/uploads/maxmegamenu/style.css?ver=1681400561" media="all">
+<link data-minify="1" rel="stylesheet" id="megamenu-genericons-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/megamenu-pro/icons/genericons/genericons/genericons.css?ver=1681400561" media="all">
+<link data-minify="1" rel="stylesheet" id="megamenu-fontawesome-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/megamenu-pro/icons/fontawesome/css/font-awesome.min.css?ver=1681400561" media="all">
+<link data-minify="1" rel="stylesheet" id="megamenu-fontawesome5-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/megamenu-pro/icons/fontawesome5/css/all.min.css?ver=1681400561" media="all">
+<link data-minify="1" rel="stylesheet" id="allstyles-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/themes/sm-theme/assets/css/allstyles.css?ver=1681400561" media="all">
+<link rel="stylesheet" id="jquery-magnificpopup-css" href="https://stealthmonitoring.com/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css?ver=2.6.1.2" media="all">
+<link rel="stylesheet" id="base-4-css" href="https://stealthmonitoring.com/wp-content/themes/bb-theme/css/base-4.min.css?ver=1.7.12.1" media="all">
+<link data-minify="1" rel="stylesheet" id="fl-automator-skin-css" href="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/uploads/bb-theme/skin-641b2c1464b75.css?ver=1681400561" media="all">
+<link rel="stylesheet" id="pp-animate-css" href="https://stealthmonitoring.com/wp-content/plugins/bbpowerpack/assets/css/animate.min.css?ver=3.5.1" media="all">
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://stealthmonitoring.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script id="jquery-core-js-extra">
+var geol_tinymce = {"icon":"https:\/\/stealthmonitoring.com\/wp-content\/plugins\/geotargetingwp\/addons\/geo-links\/includes\/admin\/img\/geol_link.png"};
+</script>
+<script src="https://stealthmonitoring.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
+<script src="https://stealthmonitoring.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js" defer=""></script>
+<script src="https://stealthmonitoring.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js" defer=""></script>
+<script src="https://stealthmonitoring.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="https://stealthmonitoring.com/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca" id="wp-dom-ready-js" defer=""></script>
+<script data-minify="1" src="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/auto-terms-of-service-and-privacy-policy/js/base.js?ver=1681400562" id="wpautoterms_base-js" defer=""></script>
+<script src="https://stealthmonitoring.com/wp-includes/js/imagesloaded.min.js?ver=6.1.1" id="imagesloaded-js" defer=""></script>
+<script src="https://stealthmonitoring.com/wp-content/plugins/bbpowerpack/assets/js/jquery.cookie.min.js?ver=1.4.1" id="jquery-cookie-js" defer=""></script>
+<script data-minify="1" src="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/themes/sm-theme/assets/js/jquery.matchHeight.js?ver=1681400561" id="match-height-js" defer=""></script>
+<link rel="https://api.w.org/" href="https://stealthmonitoring.com/wp-json/"><link rel="alternate" type="application/json" href="https://stealthmonitoring.com/wp-json/wp/v2/pages/18035"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://stealthmonitoring.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://stealthmonitoring.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.1.1">
+<link rel="shortlink" href="https://stealthmonitoring.com/?p=18035">
+<link rel="alternate" type="application/json+oembed" href="https://stealthmonitoring.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstealthmonitoring.com%2Fsurveillance-solution%2Fmobile-store-security-systems">
+<link rel="alternate" type="text/xml+oembed" href="https://stealthmonitoring.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstealthmonitoring.com%2Fsurveillance-solution%2Fmobile-store-security-systems&amp;format=xml">
+		<script>
+			var bb_powerpack = {
+				ajaxurl: 'https://stealthmonitoring.com/wp-admin/admin-ajax.php',
+				search_term: ''
+			};
+		</script>
+		<!-- Stream WordPress user activity plugin v3.9.2 -->
+<meta name="framework" content="Redux 4.3.9"><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://stealthmonitoring.com"><link rel="alternate" href="https://stealthmonitoring.com/wp-json/tribe/events/v1/"><link rel="icon" href="https://stealthmonitoring.com/wp-content/uploads/2021/11/favicon.png" sizes="32x32">
+<link rel="icon" href="https://stealthmonitoring.com/wp-content/uploads/2021/11/favicon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://stealthmonitoring.com/wp-content/uploads/2021/11/favicon.png">
+<meta name="msapplication-TileImage" content="https://stealthmonitoring.com/wp-content/uploads/2021/11/favicon.png">
+		<style id="wp-custom-css">
+			.page-template-related-resources .fl-rich-text h2 {
+	font-size: 1.5rem !important;
+}		</style>
+		<style type="text/css">/** Mega Menu CSS: fs **/</style>
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-P4HFXFQ');</script>
+
+<!-- End Google Tag Manager -->
+<link rel="stylesheet" href="https://stealthmonitoring.com/wp-content/themes/sm-theme/style.css"><link href="https://cse.google.com/cse.js?cx=a36ce12dfb8a75442" rel="preload" as="script"><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.wqdPVMOQ9t8.O/d=1/exm=el_conf/ed=1/rs=AN8SPfqirFiZv_J3gCOaVwvRZkCxyetUTQ/m=el_main"></script><script src="https://www.google.com/cse/static/element/8e77c7877b8339e2/cse_element__en.js?usqp=CAI%3D" type="text/javascript"></script><link type="text/css" href="https://www.google.com/cse/static/element/8e77c7877b8339e2/default+en.css" rel="stylesheet"><link type="text/css" href="https://www.google.com/cse/static/style/look/v4/default.css" rel="stylesheet"><link id="mktoForms2BaseStyle" rel="stylesheet" type="text/css" href="https://app-sj24.marketo.com/js/forms2/css/forms2.css"><link id="mktoForms2ThemeStyle" rel="stylesheet" type="text/css" href="https://app-sj24.marketo.com/js/forms2/css/forms2-theme-inset.css"><style>#mktoStyleLoaded {color:#123456;}</style><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><link rel="prefetch" href="https://stealthmonitoring.com/surveillance-solution"><link rel="prefetch" href="https://stealthmonitoring.com/surveillance-solution/energy-utilities-solar"><link rel="prefetch" href="https://stealthmonitoring.com/surveillance-solution/office-buildings-and-commerical-property"><link rel="prefetch" href="https://stealthmonitoring.com/surveillance-solution/automotive-dealerships"><link rel="prefetch" href="https://stealthmonitoring.com/surveillance-solution/shopping-centers-and-retail"><link rel="prefetch" href="https://stealthmonitoring.com/surveillance-solution/self-storage"><link rel="prefetch" href="https://stealthmonitoring.com/surveillance-solution/cannabis-marijuana"></head>
+<body class="page-template page-template-related-resources page-template-related-resources-php page page-id-18035 page-child parent-pageid-18033 fl-builder tribe-js fl-theme-builder-footer fl-theme-builder-footer-footer fl-theme-builder-header fl-theme-builder-header-header fl-theme-builder-part fl-theme-builder-part-subpage-header mega-menu-max-mega-menu-1 fl-framework-base-4 fl-preset-default fl-full-width fl-scroll-to-top fl-search-active fl-submenu-indicator fl-builder-breakpoint-default" itemscope="itemscope" itemtype="https://schema.org/WebPage" style="position: relative; min-height: 100%; top: 0px;"><div class="pp-offcanvas-content pp-offcanvas-content-61966d33212d7 pp-offcanvas-content-top pp-offcanvas-slide" data-id="61966d33212d7" tabindex="-1">
+				<div class="pp-offcanvas-body">
+			<div class="pp-offcanvas-content-inner">
+				<div itemprop="title" class="pp-offcanvas-custom-content pp-offcanvas-1"><h3 class="pp-offcanvas-content-title">Search Stealth Monitoring</h3><div itemprop="text" class="pp-offcanvas-content-description"><p><script async="" src="https://cse.google.com/cse.js?cx=a36ce12dfb8a75442"></script></p>
+<div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" role="presentation" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" aria-label="search" id="gsc-i-id1" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; background: url(&quot;https://www.google.com/cse/static/images/1x/en/branding.png&quot;) left center no-repeat rgb(255, 255, 255); outline: none;" dir="ltr" spellcheck="false" placeholder="Search Stealth Monitoring…"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;" title="Clear search box" role="button"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form></div></div>
+</div></div>			</div>
+		</div>
+	</div><div class="pp-offcanvas-container">
+<!-- Google Tag Manager (noscript) -->
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4HFXFQ"
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- End Google Tag Manager (noscript) --><a aria-label="Skip to content" class="fl-screen-reader-text" href="#fl-main-content">Skip to content</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><div class="fl-page" style="padding-top: 0px;">
+	<header class="fl-builder-content fl-builder-content-8538 fl-builder-global-templates-locked" data-post-id="8538" data-type="header" data-sticky="1" data-sticky-on="" data-sticky-breakpoint="medium" data-shrink="1" data-overlay="1" data-overlay-bg="transparent" data-shrink-image-height="50px" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader"><div id="topSearchSection" class="fl-row fl-row-full-width fl-row-bg-color fl-node-61966d3321a12" data-node="61966d3321a12">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-61966d332ee97" data-node="61966d332ee97">
+			<div class="fl-col fl-node-61966d332efdb" data-node="61966d332efdb">
+	<div class="fl-col-content fl-node-content">
+<div id="topSearchMdoule" class="fl-module fl-module-pp-offcanvas-content fl-node-61966d33212d7" data-node="61966d33212d7">
+	<div class="fl-module-content fl-node-content geot-module">
+		<div class="pp-offcanvas-content-wrap">
+	
+
+	<div class="pp-offcanvas-toggle-wrap">
+			</div>
+</div>
+	</div>
+</div>
+
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+
+<div id="main-header" class="fl-row fl-row-full-width fl-row-bg-color fl-node-5b48621586283" data-node="5b48621586283">
+	<div class="fl-row-content-wrap geot-row">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content" style="position: relative;">
+			
+<div class="fl-col-group fl-node-ka908z61tpqn" data-node="ka908z61tpqn">
+			<div class="fl-col fl-node-i3k7rq4ygdtw" data-node="i3k7rq4ygdtw">
+	<div class="fl-col-content fl-node-content">
+<div id="smLanguageSwitcher" class="fl-module fl-module-widget fl-node-n2s4jmrtzca5" data-node="n2s4jmrtzca5">
+	<div class="fl-module-content fl-node-content geot-module">
+		<div class="fl-widget">
+<div class="widget widget_gtranslate"><h2 class="widgettitle"> </h2><!-- GTranslate: https://gtranslate.io/ -->
+ <select onchange="doGTranslate(this);" class="notranslate" id="gtranslate_selector" aria-label="Website Language Selector"><option value="en|en">English</option><option value="en|fr">French</option></select><style>#goog-gt-tt{display:none!important;}.goog-te-banner-frame{display:none!important;}.goog-te-menu-value:hover{text-decoration:none!important;}.goog-text-highlight{background-color:transparent!important;box-shadow:none!important;}body{top:0!important;}#google_translate_element2{display:none!important;}</style>
+<div id="google_translate_element2"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="Language Translate Widget"><option value="">Select Language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="am">Amharic</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="as">Assamese</option><option value="ay">Aymara</option><option value="az">Azerbaijani</option><option value="bm">Bambara</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bho">Bhojpuri</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="co">Corsican</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="dv">Dhivehi</option><option value="doi">Dogri</option><option value="nl">Dutch</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="ee">Ewe</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="fy">Frisian</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gn">Guarani</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="haw">Hawaiian</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="ilo">Ilocano</option><option value="id">Indonesian</option><option value="ga">Irish Gaelic</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="rw">Kinyarwanda</option><option value="gom">Konkani</option><option value="ko">Korean</option><option value="kri">Krio</option><option value="ku">Kurdish (Kurmanji)</option><option value="ckb">Kurdish (Sorani)</option><option value="ky">Kyrgyz</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="ln">Lingala</option><option value="lt">Lithuanian</option><option value="lg">Luganda</option><option value="lb">Luxembourgish</option><option value="mk">Macedonian</option><option value="mai">Maithili</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mni-Mtei">Meiteilon (Manipuri)</option><option value="lus">Mizo</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="or">Odia (Oriya)</option><option value="om">Oromo</option><option value="ps">Pashto</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="qu">Quechua</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sm">Samoan</option><option value="sa">Sanskrit</option><option value="gd">Scots Gaelic</option><option value="nso">Sepedi</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="tt">Tatar</option><option value="te">Telugu</option><option value="th">Thai</option><option value="ti">Tigrinya</option><option value="ts">Tsonga</option><option value="tr">Turkish</option><option value="tk">Turkmen</option><option value="ak">Twi</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="ug">Uyghur</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="xh">Xhosa</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></div>Powered by <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com" target="_blank"><img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Translate" class="fl-node-n2s4jmrtzca5-img-0">Translate</a></span></div></div>
+<script>function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}if(!window.gt_translate_script){window.gt_translate_script=document.createElement('script');gt_translate_script.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2';document.body.appendChild(gt_translate_script);}</script>
+
+<script>
+function GTranslateGetCurrentLang() {var keyValue = document['cookie'].match('(^|;) ?googtrans=([^;]*)(;|$)');return keyValue ? keyValue[2].split('/')[2] : null;}
+function GTranslateFireEvent(element,event){try{if(document.createEventObject){var evt=document.createEventObject();element.fireEvent('on'+event,evt)}else{var evt=document.createEvent('HTMLEvents');evt.initEvent(event,true,true);element.dispatchEvent(evt)}}catch(e){}}
+function doGTranslate(lang_pair){if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];if(GTranslateGetCurrentLang() == null && lang == lang_pair.split('|')[0])return;if(typeof ga=='function'){ga('send', 'event', 'GTranslate', lang, location.hostname+location.pathname+location.search);}var teCombo;var sel=document.getElementsByTagName('select');for(var i=0;i<sel.length;i++)if(sel[i].className.indexOf('goog-te-combo')!=-1){teCombo=sel[i];break;}if(document.getElementById('google_translate_element2')==null||document.getElementById('google_translate_element2').innerHTML.length==0||teCombo.length==0||teCombo.innerHTML.length==0){setTimeout(function(){doGTranslate(lang_pair)},500)}else{teCombo.value=lang;GTranslateFireEvent(teCombo,'change');GTranslateFireEvent(teCombo,'change')}}
+</script>
+<script>jQuery(document).ready(function() {var allowed_languages = ["en","fr"];var accept_language = navigator.language.toLowerCase() || navigator.userLanguage.toLowerCase();switch(accept_language) {case 'zh-cn': var preferred_language = 'zh-CN'; break;case 'zh': var preferred_language = 'zh-CN'; break;case 'zh-tw': var preferred_language = 'zh-TW'; break;case 'zh-hk': var preferred_language = 'zh-TW'; break;case 'he': var preferred_language = 'iw'; break;default: var preferred_language = accept_language.substr(0, 2); break;}if(preferred_language != 'en' && GTranslateGetCurrentLang() == null && document.cookie.match('gt_auto_switch') == null && allowed_languages.indexOf(preferred_language) >= 0){doGTranslate('en|'+preferred_language);document.cookie = 'gt_auto_switch=1; expires=Thu, 05 Dec 2030 08:08:08 UTC; path=/;';}});</script></div></div>
+	</div>
+</div>
+
+
+</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-6192a4be34cd2 fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="6192a4be34cd2">
+			<div class="fl-col fl-node-6192a4be34dbb fl-col-small fl-visible-desktop-medium" data-node="6192a4be34dbb">
+	<div class="fl-col-content fl-node-content">
+<div id="logo" class="fl-module fl-module-photo fl-node-5b486423e4abc" data-node="5b486423e4abc">
+	<div class="fl-module-content fl-node-content geot-module">
+		<div class="fl-photo fl-photo-align-left" itemscope="" itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<a href="/" target="_self" itemprop="url">
+				<img decoding="async" class="fl-photo-img wp-image-25723 size-full fl-node-5b486423e4abc-img-0 fl-node-5b486423e4abc-img-1" src="https://stealthmonitoring.com/wp-content/uploads/2018/07/logo-tr.png" alt="logo" itemprop="image" height="53" width="275" title="logo-tr" data-no-lazy="1">
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+
+</div>
+</div>
+			<div class="fl-col fl-node-6192a4be34dbd" data-node="6192a4be34dbd">
+	<div class="fl-col-content fl-node-content"><div id="topMenu" class="fl-module fl-module-menu fl-node-5b486215863b2" data-node="5b486215863b2">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-menu">
+		<div class="fl-clear"></div>
+	<nav aria-label="Top Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><ul id="menu-top-menu" class="menu fl-menu-horizontal fl-toggle-none"><li id="menu-item-17812" class="blog-link menu-item menu-item-type-post_type menu-item-object-page"><a href="https://stealthmonitoring.com/security-blog">Blog</a></li><li id="menu-item-17813" class="login-link menu-item menu-item-type-post_type menu-item-object-page"><a href="https://stealthmonitoring.com/login">Login</a></li><li id="menu-item-17814" class="phone-number menu-item menu-item-type-custom menu-item-object-custom"><a href="tel:+1-855-STEALTH">1-855-STEALTH</a></li><li id="menu-item-17901" class="nav-search-icon menu-item menu-item-type-custom menu-item-object-custom"><a href="#search">Search</a></li><li id="menu-item-19427" class="nav-btn nav-btn-white modal-61b36768b14c8 menu-item menu-item-type-custom menu-item-object-custom"><a>Request A Quote</a></li></ul></nav></div>
+	</div>
+</div>
+<div id="smMainMenu" class="fl-module fl-module-widget fl-node-619d19773a49d" data-node="619d19773a49d">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-widget">
+<div class="widget widget_maxmegamenu"><h2 class="widgettitle"> </h2><div id="mega-menu-wrap-max_mega_menu_1" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"><div class="mega-toggle-block mega-logo-block mega-toggle-block-1" id="mega-toggle-block-1"><a class="mega-menu-logo" href="https://stealthmonitoring.com" target="_self"><img width="306" height="63" decoding="async" class="mega-menu-logo fl-node-619d19773a49d-img-1 fl-node-619d19773a49d-img-2" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20306%2063'%3E%3C/svg%3E" alt="logo" data-lazy-src="https://stealthmonitoring.com/wp-content/uploads/2018/07/logo.png"><noscript><img width="306" height="63" decoding="async" class="mega-menu-logo" src="https://stealthmonitoring.com/wp-content/uploads/2018/07/logo.png" alt="logo" /></noscript></a></div></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class="mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-2" id="mega-toggle-block-2"><button aria-label="Toggle Menu" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+                  <span class="mega-toggle-animated-box">
+                    <span class="mega-toggle-animated-inner"></span>
+                  </span>
+                </button></div></div></div><ul id="mega-menu-max_mega_menu_1" class="mega-menu max-mega-menu mega-menu-horizontal" data-event="click" data-effect="slide" data-effect-speed="200" data-effect-mobile="slide" data-effect-speed-mobile="200" data-panel-width="body" data-panel-inner-width="1220px" data-mobile-force-width="body" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="accordion" data-breakpoint="805" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100"><li class="mega-mobile-blog-link mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-hide-on-desktop mega-menu-item-18871 mobile-blog-link" id="mega-menu-item-18871"><a class="mega-menu-link" href="https://stealthmonitoring.com/security-blog" tabindex="0">Blog</a></li><li class="mega-mobile-login-link mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-hide-on-desktop mega-menu-item-18872 mobile-login-link" id="mega-menu-item-18872"><a class="mega-menu-link" href="https://stealthmonitoring.com/login" tabindex="0">Login</a></li><li class="mega-nav-search-icon mega-mobile-search-link mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-hide-on-desktop mega-menu-item-18873 nav-search-icon mobile-search-link" id="mega-menu-item-18873"><a class="mega-menu-link" href="#search" tabindex="0">Search</a></li><li class="mega-clickable-link mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-17834 clickable-link" id="mega-menu-item-17834"><a class="mega-menu-link" aria-haspopup="true" aria-expanded="false" tabindex="0">Services<span class="mega-indicator" data-has-click-event="true"></span></a>
+<ul class="mega-sub-menu" style="width: 868.8px; left: -237.2px;">
+<li class="mega-menu-row mega-sub-menu-title-row sub-menu-title-row" id="mega-menu-17834-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-12-of-12 mega-hide-on-mobile" id="mega-menu-17834-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18495" id="mega-menu-item-18495"><a class="mega-menu-link" href="https://stealthmonitoring.com/services">Services</a></li>		</ul>
+</li>	</ul>
+</li><li class="mega-menu-row mega-stealth-submenu-row stealth-submenu-row" id="mega-menu-17834-1">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-stealth-submenu-clm mega-menu-columns-3-of-12 stealth-submenu-clm" id="mega-menu-17834-1-0">
+		<ul class="mega-sub-menu">
+<li class="mega-submenu-title mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-disable-link mega-menu-item-18484 submenu-title" id="mega-menu-item-18484"><a class="mega-menu-link" tabindex="0">Video Surveillance Solutions<span class="mega-indicator" data-has-click-event="true"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18477" id="mega-menu-item-18477"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/live-video-monitoring-and-surveillance">Live Video Monitoring and Surveillance</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18478" id="mega-menu-item-18478"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/mobile-and-temporary-video-monitoring-surveillance">Mobile Video Monitoring</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18479" id="mega-menu-item-18479"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/solar-powered-video-monitoring-and-surveillance">Solar Powered Video Monitoring</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-33058" id="mega-menu-item-33058"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/service-lane-monitoring">Service Lane Monitoring</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18480" id="mega-menu-item-18480"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/remote-concierge-and-security">Remote Concierge</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18481" id="mega-menu-item-18481"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/gate-security-access-control-and-entry-management">Gate &amp; Access Control</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18482" id="mega-menu-item-18482"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/crane-climbing-detection-security-system">Crane Climbing Detection</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18483" id="mega-menu-item-18483"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/video-surveillance-as-a-service">We Watch Your Cameras</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-stealth-submenu-clm mega-menu-columns-3-of-12 stealth-submenu-clm" id="mega-menu-17834-1-1">
+		<ul class="mega-sub-menu">
+<li class="mega-submenu-title mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-disable-link mega-menu-item-18485 submenu-title" id="mega-menu-item-18485"><a class="mega-menu-link" tabindex="0">Camera Technology<span class="mega-indicator" data-has-click-event="true"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18486" id="mega-menu-item-18486"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/license-plate-recognition-camera-system">License Plate Recognition</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18487" id="mega-menu-item-18487"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/long-range-surveillance-security-camera-system">Long-Range Surveillance</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18488" id="mega-menu-item-18488"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/thermal-imaging-security-camera-system">Thermal Imaging</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18489" id="mega-menu-item-18489"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/time-lapse-video-photography-solutions">Time-Lapse</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-stealth-submenu-clm mega-menu-columns-3-of-12 stealth-submenu-clm" id="mega-menu-17834-1-2">
+		<ul class="mega-sub-menu">
+<li class="mega-submenu-title mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-disable-link mega-menu-item-18490 submenu-title" id="mega-menu-item-18490"><a class="mega-menu-link" tabindex="0">Value Added Services<span class="mega-indicator" data-has-click-event="true"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18498" id="mega-menu-item-18498"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/video-review-investigation-and-analysis">Video Review &amp; Analysis</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18499" id="mega-menu-item-18499"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/security-camera-system-health-check">System Health Check</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18500" id="mega-menu-item-18500"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/security-system-design-and-installation">Design &amp; Installation</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18501" id="mega-menu-item-18501"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/total-service-and-support">Total Service</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-33059" id="mega-menu-item-33059"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/services/intrusion-dectection-alarms">Intrusion Dectection Alarms</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-stealth-menu-widget-clm mega-menu-columns-3-of-12 stealth-menu-widget-clm" id="mega-menu-17834-1-3">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_block mega-menu-item-block-15" id="mega-menu-item-block-15"><p><a id="whitePaper" href="/resource-center/changing-of-the-guard-white-paper" class="Card Card-menu" title="Changing of the Guard - White Paper"></a></p><a id="whitePaper" href="/resource-center/changing-of-the-guard-white-paper" class="Card Card-menu" title="Changing of the Guard - White Paper">
+<div data-bg="/wp-content/uploads/2022/02/production.craftcms.stealthmonitoring_resource-images_Changing-of-the-Guard-White-Paper-2021-Listing.webp" class="Card-img rocket-lazyload entered lazyloaded" style="background-image: url(&quot;/wp-content/uploads/2022/02/production.craftcms.stealthmonitoring_resource-images_Changing-of-the-Guard-White-Paper-2021-Listing.webp&quot;);" data-ll-status="loaded">
+<div class="Card-tag">White Papers</div>
+<p></p></div>
+<div class="Card-content">
+<h3 class="Card-hdg">Changing of the Guard - White Paper</h3>
+<div class="Card-details">
+<p>How do Security Guards Stack Up Against Live Video Monitoring?<br>
+Today, more than ever, we are relying on private security to not only protect against…</p>
+<p></p></div>
+<div class="Card-action">
+    <span class="Card-btn"><br>
+                Download<br>
+          </span>
+  </div>
+<p></p></div>
+</a><p><a id="whitePaper" href="/resource-center/changing-of-the-guard-white-paper" class="Card Card-menu" title="Changing of the Guard - White Paper"></a></p></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-clickable-link mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-ancestor mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-17835 clickable-link" id="mega-menu-item-17835"><a class="mega-menu-link" aria-haspopup="true" aria-expanded="false" tabindex="0">Surveillance Solution<span class="mega-indicator" data-has-click-event="true"></span></a>
+<ul class="mega-sub-menu" style="width: 868.8px; left: -237.2px;">
+<li class="mega-menu-row" id="mega-menu-17835-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-12-of-12 mega-hide-on-mobile" id="mega-menu-17835-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-current-page-ancestor mega-current-page-parent mega-menu-item-18503" id="mega-menu-item-18503"><a class="mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution">Surveillance Solution</a></li>		</ul>
+</li>	</ul>
+</li><li class="mega-menu-row mega-stealth-submenu-row stealth-submenu-row" id="mega-menu-17835-1">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-stealth-submenu-clm-fifty mega-menu-columns-4-of-12 stealth-submenu-clm-fifty" id="mega-menu-17835-1-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-ancestor mega-current-menu-parent mega-menu-item-has-children mega-hide-arrow mega-menu-item-18516" id="mega-menu-item-18516"><a class="mega-menu-link" href="#" aria-label="Surveillance Solution#1"><span class="mega-indicator" data-has-click-event="true"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-current-menu-item mega-page_item mega-page-item-18035 mega-current_page_item mega-has-icon mega-icon-left mega-menu-item-18504" id="mega-menu-item-18504"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/mobile-store-security-systems">Hotel & Motel Security Systems</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18505" id="mega-menu-item-18505"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/multifamily-residential-and-apartments">Multi-Family Residential Security Solutions</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18506" id="mega-menu-item-18506"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/shopping-centers-and-retail">Shopping Centers Security Solutions</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18507" id="mega-menu-item-18507"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/automotive-dealerships">Automotive Dealership Security Solutions</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18508" id="mega-menu-item-18508"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/office-buildings-and-commerical-property">Office Building Security Solutions</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18509" id="mega-menu-item-18509"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/industrial-and-manufacturing">Industrial &amp; Manufacturing Security Solutions</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-stealth-submenu-clm-fifty mega-menu-columns-5-of-12 stealth-submenu-clm-fifty" id="mega-menu-17835-1-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-hide-arrow mega-menu-item-18517" id="mega-menu-item-18517"><a class="mega-menu-link" href="#" aria-label="Surveillance Solution#2"><span class="mega-indicator" data-has-click-event="true"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18510" id="mega-menu-item-18510"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/scrap-metal-recycling-and-waste">Scrap Metal &amp; Recycling Security Solutions</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18511" id="mega-menu-item-18511"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/energy-utilities-solar">Energy Security Solutions</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18515" id="mega-menu-item-18515"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/transportation-logistics">Distribution &amp; Logistics</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18512" id="mega-menu-item-18512"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/self-storage">Self-Storage</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18513" id="mega-menu-item-18513"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/cannabis-marijuana">Cannabis</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-icon-left mega-menu-item-18514" id="mega-menu-item-18514"><a class="mega-custom-icon mega-menu-link" href="https://stealthmonitoring.com/surveillance-solution/metals-and-mining">Metals &amp; Mining Security Solutions</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-stealth-menu-widget-clm mega-menu-columns-3-of-12 stealth-menu-widget-clm" id="mega-menu-17835-1-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_block mega-menu-item-block-16" id="mega-menu-item-block-16"><p><a id="whitePaper" href="/resource-center/changing-of-the-guard-white-paper" class="Card Card-menu" title="Changing of the Guard - White Paper"></a></p><a id="whitePaper" href="/resource-center/changing-of-the-guard-white-paper" class="Card Card-menu" title="Changing of the Guard - White Paper">
+<div data-bg="/wp-content/uploads/2022/02/production.craftcms.stealthmonitoring_resource-images_Changing-of-the-Guard-White-Paper-2021-Listing.webp" class="Card-img rocket-lazyload entered lazyloaded" style="background-image: url(&quot;/wp-content/uploads/2022/02/production.craftcms.stealthmonitoring_resource-images_Changing-of-the-Guard-White-Paper-2021-Listing.webp&quot;);" data-ll-status="loaded">
+<div class="Card-tag">White Papers</div>
+<p></p></div>
+<div class="Card-content">
+<h3 class="Card-hdg">Changing of the Guard - White Paper</h3>
+<div class="Card-details">
+<p>How do Security Guards Stack Up Against Live Video Monitoring?<br>
+Today, more than ever, we are relying on private security to not only protect against…</p>
+<p></p></div>
+<div class="Card-action">
+    <span class="Card-btn"><br>
+                Download<br>
+          </span>
+  </div>
+<p></p></div>
+</a><p><a id="whitePaper" href="/resource-center/changing-of-the-guard-white-paper" class="Card Card-menu" title="Changing of the Guard - White Paper"></a></p></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-clickable-link mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-17836 clickable-link" id="mega-menu-item-17836"><a class="mega-menu-link" aria-haspopup="true" aria-expanded="false" tabindex="0">Resources<span class="mega-indicator" data-has-click-event="true"></span></a>
+<ul class="mega-sub-menu" style="width: 868.8px; left: -237.2px;">
+<li class="mega-menu-row" id="mega-menu-17836-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-12-of-12 mega-hide-on-mobile" id="mega-menu-17836-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-26795" id="mega-menu-item-26795"><a class="mega-menu-link" href="https://stealthmonitoring.com/resource-center">Resource Center</a></li>		</ul>
+</li>	</ul>
+</li><li class="mega-menu-row mega-stealth-submenu-row stealth-submenu-row" id="mega-menu-17836-1">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-9-of-12" id="mega-menu-17836-1-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-hide-arrow mega-menu-item-18591" id="mega-menu-item-18591"><a class="mega-menu-link" href="#" aria-label="Resource Center #1"><span class="mega-indicator" data-has-click-event="true"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-18585" id="mega-menu-item-18585"><a class="mega-menu-link" href="/resource-center?_type=videos">Videos</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-18586" id="mega-menu-item-18586"><a class="mega-menu-link" href="/resource-center?_type=white-papers">White Papers</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-18587" id="mega-menu-item-18587"><a class="mega-menu-link" href="/resource-center?_type=case-studies">Case Studies</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-18588" id="mega-menu-item-18588"><a class="mega-menu-link" href="/resource-center?_type=infographics">Infographics</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-18589" id="mega-menu-item-18589"><a class="mega-menu-link" href="/resource-center?_type=brochures">Brochures</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18590" id="mega-menu-item-18590"><a class="mega-menu-link" href="https://stealthmonitoring.com/security-blog">Blog</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-stealth-menu-widget-clm mega-menu-columns-3-of-12 stealth-menu-widget-clm" id="mega-menu-17836-1-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_block mega-menu-item-block-17" id="mega-menu-item-block-17"><p><a id="whitePaper" href="/resource-center/changing-of-the-guard-white-paper" class="Card Card-menu" title="Changing of the Guard - White Paper"></a></p><a id="whitePaper" href="/resource-center/changing-of-the-guard-white-paper" class="Card Card-menu" title="Changing of the Guard - White Paper">
+<div data-bg="/wp-content/uploads/2022/02/production.craftcms.stealthmonitoring_resource-images_Changing-of-the-Guard-White-Paper-2021-Listing.webp" class="Card-img rocket-lazyload entered lazyloaded" style="background-image: url(&quot;/wp-content/uploads/2022/02/production.craftcms.stealthmonitoring_resource-images_Changing-of-the-Guard-White-Paper-2021-Listing.webp&quot;);" data-ll-status="loaded">
+<div class="Card-tag">White Papers</div>
+<p></p></div>
+<div class="Card-content">
+<h3 class="Card-hdg">Changing of the Guard - White Paper</h3>
+<div class="Card-details">
+<p>How do Security Guards Stack Up Against Live Video Monitoring?<br>
+Today, more than ever, we are relying on private security to not only protect against…</p>
+<p></p></div>
+<div class="Card-action">
+    <span class="Card-btn"><br>
+                Download<br>
+          </span>
+  </div>
+<p></p></div>
+</a><p><a id="whitePaper" href="/resource-center/changing-of-the-guard-white-paper" class="Card Card-menu" title="Changing of the Guard - White Paper"></a></p></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-clickable-link mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-17837 clickable-link" id="mega-menu-item-17837"><a class="mega-menu-link" aria-haspopup="true" aria-expanded="false" tabindex="0">Company<span class="mega-indicator" data-has-click-event="true"></span></a>
+<ul class="mega-sub-menu" style="width: 868.8px; left: -237.2px;">
+<li class="mega-menu-row" id="mega-menu-17837-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-12-of-12 mega-hide-on-mobile" id="mega-menu-17837-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18592" id="mega-menu-item-18592"><a class="mega-menu-link" href="https://stealthmonitoring.com/company">Company</a></li>		</ul>
+</li>	</ul>
+</li><li class="mega-menu-row mega-stealth-submenu-row stealth-submenu-row" id="mega-menu-17837-1">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-stealth-submenu-clm-fifty mega-menu-columns-4-of-12 stealth-submenu-clm-fifty" id="mega-menu-17837-1-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-hide-arrow mega-menu-item-18593" id="mega-menu-item-18593"><a class="mega-menu-link" href="#" aria-label="Company #1"><span class="mega-indicator" data-has-click-event="true"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18595" id="mega-menu-item-18595"><a class="mega-menu-link" href="https://stealthmonitoring.com/company">About Us</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18596" id="mega-menu-item-18596"><a class="mega-menu-link" href="https://stealthmonitoring.com/why-stealth">Why Stealth?</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18597" id="mega-menu-item-18597"><a class="mega-menu-link" href="https://stealthmonitoring.com/corporate-governance">Corporate Governance</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18598" id="mega-menu-item-18598"><a class="mega-menu-link" href="https://stealthmonitoring.com/news-and-events">News &amp; Events</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18599" id="mega-menu-item-18599"><a class="mega-menu-link" href="https://stealthmonitoring.com/stealth-labs">Stealth Labs</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-stealth-submenu-clm-fifty mega-menu-columns-5-of-12 stealth-submenu-clm-fifty" id="mega-menu-17837-1-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-hide-arrow mega-menu-item-18594" id="mega-menu-item-18594"><a class="mega-menu-link" href="#" aria-label="Company #12"><span class="mega-indicator" data-has-click-event="true"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18600" id="mega-menu-item-18600"><a class="mega-menu-link" href="https://stealthmonitoring.com/police-relations">Police Relations</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18601" id="mega-menu-item-18601"><a class="mega-menu-link" href="https://stealthmonitoring.com/live-remote-video-surveillance-locations">Locations</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18602" id="mega-menu-item-18602"><a class="mega-menu-link" href="https://stealthmonitoring.com/channel-partners">Channel Partners</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-18603" id="mega-menu-item-18603"><a class="mega-menu-link" href="https://stealthmonitoring.com/careers">Careers</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-stealth-menu-widget-clm mega-menu-columns-3-of-12 stealth-menu-widget-clm" id="mega-menu-17837-1-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_block mega-menu-item-block-18" id="mega-menu-item-block-18"><p><a id="video" href="/resource-center/arlington-police-award-stealth-monitoring-for-aiding-police-in-catching-car-thieves" class="Card Card-menu" title="Changing of the Guard - White Paper"></a></p><a id="video" href="/resource-center/arlington-police-award-stealth-monitoring-for-aiding-police-in-catching-car-thieves" class="Card Card-menu" title="Changing of the Guard - White Paper">
+<div data-bg="/wp-content/uploads/2022/02/production.craftcms.stealthmonitoring_resource-images_Arlington-Police-Award-Stealth-Monitoring-for-Aiding-Police-in-Catching-Car-Thieves-listimage.webp" class="Card-img rocket-lazyload entered lazyloaded" style="background-image: url(&quot;/wp-content/uploads/2022/02/production.craftcms.stealthmonitoring_resource-images_Arlington-Police-Award-Stealth-Monitoring-for-Aiding-Police-in-Catching-Car-Thieves-listimage.webp&quot;);" data-ll-status="loaded">
+<div class="Card-tag">Video</div>
+<p></p></div>
+<div class="Card-content">
+<h3 class="Card-hdg">Arlington Police Award Stealth Monitoring for Aiding Police in Catching Car Thieves</h3>
+<div class="Card-details">
+<p>One of our apartment security operators helped Arlington Police locate a group of car thieves. Click the video to see the news video.<br>
+If you would…</p>
+<p></p></div>
+<div class="Card-action">
+    <span class="Card-btn"><br>
+                Watch<br>
+          </span>
+  </div>
+<p></p></div>
+</a><p><a id="video" href="/resource-center/arlington-police-award-stealth-monitoring-for-aiding-police-in-catching-car-thieves" class="Card Card-menu" title="Changing of the Guard - White Paper"></a></p></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-26930" id="mega-menu-item-26930"><a class="mega-menu-link" href="https://stealthmonitoring.com/contact" tabindex="0">Contact</a></li></ul></div></div></div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-diutykeav306 hide-row" data-node="diutykeav306">
+	<div class="fl-row-content-wrap geot-row">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+			
+<div class="fl-col-group fl-node-krxpnyh4o6ua" data-node="krxpnyh4o6ua">
+			<div class="fl-col fl-node-yuhb7atnc96o" data-node="yuhb7atnc96o">
+	<div class="fl-col-content fl-node-content">
+<div class="fl-module fl-module-icon fl-node-8lwnq2c9f5vk" data-node="8lwnq2c9f5vk">
+	<div class="fl-module-content fl-node-content geot-module">
+		<div class="fl-icon-wrap">
+	<span class="fl-icon">
+				<i class="icon-loupe-1" aria-hidden="true"></i>
+					</span>
+	</div>
+	</div>
+</div>
+
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+
+</header>
+<div class="fl-builder-content fl-builder-content-17854 fl-builder-global-templates-locked" data-post-id="17854" data-type="part">
+	<div id="subHeader" class="fl-row fl-row-full-width fl-row-bg-photo fl-node-61968a0193dee fl-row-custom-height fl-row-align-center fl-row-bg-overlay" data-node="61968a0193dee">
+		<div class="fl-row-content-wrap geot-row">
+					<div class="pp-row-separator pp-row-separator-bottom">
+													<svg class="pp-big-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" fill="#DC2227" width="100%" height="100" viewBox="0 0 4.66666 0.333331" preserveAspectRatio="none" role="presentation">
+											<path class="fil0" d="M-0 0.333331l4.66666 0 0 -3.93701e-006 -2.33333 0 -2.33333 0 0 3.93701e-006zm0 -0.333331l4.66666 0 0 0.166661 -4.66666 0 0 -0.166661zm4.66666 0.332618l0 -0.165953 -4.66666 0 0 0.165953 1.16162 -0.0826181 1.17171 -0.0833228 1.17171 0.0833228 1.16162 0.0826181z"></path>
+									</svg>
+									</div>
+							<div class="fl-row-content fl-row-full-width fl-node-content">
+				
+	<div class="fl-col-group fl-node-619690cecc4ed" data-node="619690cecc4ed">
+				<div id="subheader-clm-seprator" class="fl-col fl-node-619690cecc6e2" data-node="619690cecc6e2"><div class="pp-col-separator pp-col-separator-bottom">
+													<svg class="pp-big-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" fill="#f7f8f9" width="100%" height="85" viewBox="0 0 4.66666 0.333331" preserveAspectRatio="none" style="width: 100%;">
+											<path class="fil0" d="M-0 0.333331l4.66666 0 0 -3.93701e-006 -2.33333 0 -2.33333 0 0 3.93701e-006zm0 -0.333331l4.66666 0 0 0.166661 -4.66666 0 0 -0.166661zm4.66666 0.332618l0 -0.165953 -4.66666 0 0 0.165953 1.16162 -0.0826181 1.17171 -0.0833228 1.17171 0.0833228 1.16162 0.0826181z"></path>
+									</svg>
+									</div>
+		<div class="fl-col-content fl-node-content">    
+	
+			
+	<div id="subHeaderTitle" class="fl-module fl-module-pp-heading fl-node-61968f28a89b2" data-node="61968f28a89b2">
+		<div class="fl-module-content fl-node-content geot-module">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<div class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title"><span><span><a href="https://stealthmonitoring.com/">Home</a></span> » <span><a href="https://stealthmonitoring.com/industry-security-solutions">Surveillance Solution</a></span> » <span class="breadcrumb_last" aria-current="page">Hotel & Motel Security Systems</span></span></span>
+	
+												<span class="title-text pp-secondary-title"><h1>Hotel & Motel Security Systems</h1></span>
+				
+				
+			</div>
+	
+			
+		</div>
+	
+		
+		</div>
+		</div>
+	</div>
+	
+	</div>
+	</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	
+	</div>	<div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
+	
+			
+	<div class="fl-content-full container">
+		<div class="row">
+			<div class="fl-content col-md-12">
+				<article class="fl-post post-18035 page type-page status-publish has-post-thumbnail hentry" id="fl-post-18035" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+	
+				<div class="fl-post-content clearfix" itemprop="text">
+			<div class="fl-builder-content fl-builder-content-18035 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="18035">
+	<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-619cb36f994d8" data-node="619cb36f994d8">
+		<div class="fl-row-content-wrap geot-row">
+							<div class="fl-row-content fl-row-fixed-width fl-node-content">
+				
+	<div class="fl-col-group fl-node-619cbf2d6ae32 fl-col-group-custom-width" data-node="619cbf2d6ae32">
+				<div class="fl-col fl-node-619cbf2d6afe5" data-node="619cbf2d6afe5">
+		<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-619cb535c25d7" data-node="619cb535c25d7">
+		<div class="fl-module-content fl-node-content geot-module">
+			<div class="fl-rich-text">
+		<p>Hotel security systems give guests a safe and secure place where they can enjoy their time away from home. Most hotels have a basic security plan in place which can include a night security guard and a couple of security cameras.
+			Security guards are often busy with other tasks that are not always security related. Live video monitoring can give the hotel a security based service that can also multi task while providing security and intruder detection to the entire property.</p>
+	</div>
+		</div>
+	</div>
+	
+	<div class="fl-module fl-module-rich-text fl-node-619cb3d36214f" data-node="619cb3d36214f">
+		<div class="fl-module-content fl-node-content">
+			<div class="fl-rich-text">
+		<p>Our video monitoring services can provide the front desk with information about a guest looking for their room and notify the police if a possible intruder is in the parking garage at the same time. Alasar CCTV monitoring service can also provide security service without setting foot on the property. We can remotely monitor the entire property from one place which would be the same as having multiple security guards.</p>
+	</div>
+		</div>
+	</div>
+	<div id="innerCallout" class="fl-module fl-module-callout fl-node-619cb55fe19f4" data-node="619cb55fe19f4">
+		<div class="fl-module-content fl-node-content">
+			<div class="fl-callout fl-callout-has-icon fl-callout-icon-left">
+			<span class="fl-icon">
+					<i class="icon-save-money-1" aria-hidden="true"></i>
+						</span>
+			<div class="fl-callout-content">
+			<h3 class="fl-callout-title"><span class="fl-callout-title-text">Further</span></h3>		<div class="fl-callout-text-wrap">
+				<div class="fl-callout-text"><a href="https://www.nighthawkmonitoring.com/hotel-security-systems/">https://www.nighthawkmonitoring.com/hotel-security-systems/</a>
+	</div>		</div>
+		</div>
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-619cbf2d6afe7 fl-col-small" data-node="619cbf2d6afe7">
+		<div class="fl-col-content fl-node-content">
+	<div id="merketoEmbedForm" class="fl-module fl-module-html fl-node-5oxuekgtsnhp merketo-sidebar-form" data-node="5oxuekgtsnhp">
+		<div class="fl-module-content fl-node-content geot-module">
+			<div class="fl-html">
+		<h3 class="form-title">Contact Sales</h3>
+	<div data-formid="1156" data-success="/thank-you-for-contacting-us">
+	<script data-minify="1" src="https://stealthmonitoring.com/wp-content/cache/min/1/js/forms2/js/forms2.min.js?ver=1681400561"></script> 
+	<form id="mktoForm_1156" novalidate="novalidate" class="mktoForm mktoHasWidth mktoLayoutLeft" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 440px;"><style type="text/css">.mktoForm .mktoButtonWrap.mktoInset .mktoButton {
+	color:#000;
+	background:#fff;
+	border:1px solid #aeb0b6;
+	padding:0.4em 1em;
+	font-size:1em;
+	box-shadow: 1px 1px 6px 1px #ccc;
+	background-color:#f5f5f5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#dfdfdf));
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #dfdfdf);
+	background-image: -moz-linear-gradient(top, #f5f5f5, #dfdfdf);
+	background-image: linear-gradient(to bottom, #f5f5f5, #dfdfdf);
+	}
+	.mktoForm .mktoButtonWrap.mktoInset .mktoButton:hover {
+	border:1px solid #999;
+	}
+	.mktoForm .mktoButtonWrap.mktoInset .mktoButton:focus {
+	outline:none;
+	border:1px solid #999;
+	}
+	.mktoForm .mktoButtonWrap.mktoInset .mktoButton:active{
+	box-shadow:inset 1px 1px 6px 1px #ccc;
+	background-color:#dfdfdf;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#f5f5f5));
+	background-image: -webkit-linear-gradient(top, #dfdfdf, #f5f5f5);
+	background-image: -moz-linear-gradient(top, #dfdfdf, #f5f5f5);
+	background-image: linear-gradient(to bottom, #dfdfdf, #f5f5f5);
+	}
+	</style><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="FirstName" id="LblFirstName" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">First Name:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="FirstName" name="FirstName" maxlength="255" aria-labelledby="LblFirstName InstructFirstName" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;" placeholder="First Name"><span id="InstructFirstName" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="LastName" id="LblLastName" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Last Name:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="LastName" name="LastName" maxlength="255" aria-labelledby="LblLastName InstructLastName" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;" placeholder="Last Name"><span id="InstructLastName" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Company" id="LblCompany" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Company:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Company" name="Company" maxlength="255" aria-labelledby="LblCompany InstructCompany" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;" placeholder="Company"><span id="InstructCompany" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Email" id="LblEmail" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Email:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Email" name="Email" maxlength="255" aria-labelledby="LblEmail InstructEmail" type="email" class="mktoField mktoEmailField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;" placeholder="Email"><span id="InstructEmail" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Phone" id="LblPhone" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Phone:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Phone" name="Phone" maxlength="255" aria-labelledby="LblPhone InstructPhone" type="tel" class="mktoField mktoTelField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;" placeholder="Phone"><span id="InstructPhone" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="State" id="LblState" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">State/Province:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="State" name="State" aria-labelledby="LblState InstructState" class="mktoField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;"><option value="">Select State/Province</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Alberta">Alberta</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="British Columbia">British Columbia</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Manitoba">Manitoba</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Brunswick">New Brunswick</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="Newfoundland and Labrador">Newfoundland and Labrador</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Northwest Territories">Northwest Territories</option><option value="Nova Scotia">Nova Scotia</option><option value="Nunavut">Nunavut</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Ontario">Ontario</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Prince Edward Island">Prince Edward Island</option><option value="Puerto Rico">Puerto Rico</option><option value="Quebec">Quebec</option><option value="Rhode Island">Rhode Island</option><option value="Saskatchewan">Saskatchewan</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option><option value="Yukon">Yukon</option></select><span id="InstructState" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Industry" id="LblIndustry" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Industry:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Industry" name="Industry" aria-labelledby="LblIndustry InstructIndustry" class="mktoField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;"><option value="">Select Industry</option><option value="Automotive">Automotive</option><option value="Cannabis">Cannabis</option><option value="Commercial Real Estate">Commercial Real Estate</option><option value="Hotel & Motel Security Systems">Hotel & Motel Security Systems</option><option value="Education">Education</option><option value="Energy/Utilities">Energy/Utilities</option><option value="Fueling">Fueling</option><option value="Industrial-Heavy">Industrial-Heavy</option><option value="Industrial-Light">Industrial-Light</option><option value="Mining">Mining</option><option value="Multi-Family">Multi-Family</option><option value="Office">Office</option><option value="Research">Research</option><option value="Scrap Metals/Recycling/Waste">Scrap Metals/Recycling/Waste</option><option value="Shopping Center">Shopping Center</option><option value="Storage">Storage</option><option value="Transportation/Logistics">Transportation/Logistics</option></select><span id="InstructIndustry" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="commentCapture" id="LblcommentCapture" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Comments:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><textarea id="commentCapture" name="commentCapture" rows="3" aria-labelledby="LblcommentCapture InstructcommentCapture" class="mktoField mktoHasWidth" maxlength="2000" style="width: 284px;" placeholder="Comments"></textarea><span id="InstructcommentCapture" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoButtonRow"><span class="mktoButtonWrap mktoInset" style="margin-left: 154px;"><button type="submit" class="mktoButton">Submit</button></span></div><input type="hidden" name="formid" class="mktoField mktoFieldDescriptor" value="1156"><input type="hidden" name="munchkinId" class="mktoField mktoFieldDescriptor" value="947-QOJ-252"></form>
+	<!-- <script>
+		 MktoForms2.loadForm("//app-sj24.marketo.com", "947-QOJ-252", 1156, function(form) {
+				form.onSuccess(function(values, followUpUrl) {
+					location.href = "/thank-you-for-contacting-us";
+					return false;
+				});
+	
+				if (document.getElementsByName('FirstName').length) {
+					document.getElementsByName('FirstName')[0].placeholder = 'First Name';
+				}
+				if (document.getElementsByName('LastName').length) {
+					document.getElementsByName('LastName')[0].placeholder = 'Last Name';
+				}
+				if (document.getElementsByName('Company').length) {
+					document.getElementsByName('Company')[0].placeholder = 'Company';
+				}
+				if (document.getElementsByName('Email').length) {
+					document.getElementsByName('Email')[0].placeholder = 'Email';
+				}
+				if (document.getElementsByName('Phone').length) {
+					document.getElementsByName('Phone')[0].placeholder = 'Phone';
+				}
+				if (document.getElementsByName('Title').length) {
+					document.getElementsByName('Title')[0].placeholder = 'Title';
+				}
+				if (document.getElementsByName('commentCapture').length) {
+					document.getElementsByName('commentCapture')[0].placeholder = 'Comments';
+				}
+			});
+	</script> -->
+	</div></div>
+		</div>
+	</div>
+	
+	</div>
+	</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-619cfd5887e51" data-node="619cfd5887e51">
+		<div class="fl-row-content-wrap">
+							<div class="fl-row-content fl-row-fixed-width fl-node-content">
+			
+	<div class="fl-col-group fl-node-619cffc296756" data-node="619cffc296756">
+				<div class="fl-col fl-node-619cffc29685c" data-node="619cffc29685c">
+		<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-619cf42b20305" data-node="619cf42b20305">
+		<div class="fl-module-content fl-node-content">
+			<h2 class="fl-heading">
+			<span class="fl-heading-text">Our Proactive <br>Solution Provides:</span>
+		</h2>
+		</div>
+	</div>
+	</div>
+	</div>
+		</div>
+	
+	<div class="fl-col-group fl-node-619d000c7b165 fl-col-group-custom-width" data-node="619d000c7b165">
+				<div class="fl-col fl-node-619d000c7b345 fl-col-small" data-node="619d000c7b345">
+		<div class="fl-col-content fl-node-content"><div id="smartTitleWithNumbers" class="fl-module fl-module-pp-heading fl-node-619d01cf25b9f" data-node="619d01cf25b9f">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<h3 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">01</span>
+	
+												<span class="title-text pp-secondary-title">Liability Protection</span>
+				
+				
+			</h3>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>Ensure that safety procedures are being followed so you can take appropriate action. In addition, recording and archiving site activities can prove useful when dealing with insurance companies or authorities during incidents such as on-site injury claims, property damage issues or accidents.</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-619d000c7b348 fl-col-small" data-node="619d000c7b348">
+		<div class="fl-col-content fl-node-content"><div id="smartTitleWithNumbers" class="fl-module fl-module-pp-heading fl-node-619d001c51f75" data-node="619d001c51f75">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<h3 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">02</span>
+	
+												<span class="title-text pp-secondary-title">24/7 Monitoring</span>
+				
+				
+			</h3>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>Whether it’s 24/7 coverage of multiple projects or after-hours monitoring of a select location, you will have peace of mind in knowing that your property is being watched by trained specialists.</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+		</div>
+	
+	<div class="fl-col-group fl-node-619d01d99aff1 fl-col-group-custom-width" data-node="619d01d99aff1">
+				<div class="fl-col fl-node-619d01d99b379 fl-col-small" data-node="619d01d99b379">
+		<div class="fl-col-content fl-node-content"><div id="smartTitleWithNumbers" class="fl-module fl-module-pp-heading fl-node-619d01ec1f657" data-node="619d01ec1f657">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<h3 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">03</span>
+	
+												<span class="title-text pp-secondary-title">Customized Reports And Analytics</span>
+				
+				
+			</h3>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>Get a complete understanding of what activities are happening on your sites. Stealth’s video analyst team reviews archived footage for clients to provide evidence of on-site issues, such as accidents and property damage.</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-619d01d99b37c fl-col-small" data-node="619d01d99b37c">
+		<div class="fl-col-content fl-node-content"><div id="smartTitleWithNumbers" class="fl-module fl-module-pp-heading fl-node-619d01e3cc687" data-node="619d01e3cc687">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<h3 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">04</span>
+	
+												<span class="title-text pp-secondary-title">Operational Improvements</span>
+				
+				
+			</h3>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>In addition to securing sites, Stealth’s team is always focused on other ways we can help improve your business processes. For example, our operators can help ensure your access control procedures are working correctly and only authorized personnel are on-site.</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+		</div>
+	
+	<div class="fl-col-group fl-node-619d025813c72 fl-col-group-custom-width" data-node="619d025813c72">
+				<div class="fl-col fl-node-619d025813dab fl-col-small" data-node="619d025813dab">
+		<div class="fl-col-content fl-node-content"><div id="smartTitleWithNumbers" class="fl-module fl-module-pp-heading fl-node-619d026666e35" data-node="619d026666e35">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<h3 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">05</span>
+	
+												<span class="title-text pp-secondary-title">Extensive Site Coverage</span>
+				
+				
+			</h3>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>Remote video monitoring allows for cameras to view multiple parts of the site at once from vantage points that may be impossible for guards to access.</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-619d025813dae fl-col-small" data-node="619d025813dae">
+		<div class="fl-col-content fl-node-content"><div id="smartTitleWithNumbers" class="fl-module fl-module-pp-heading fl-node-619d025d67307" data-node="619d025d67307">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<h3 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">06</span>
+	
+												<span class="title-text pp-secondary-title">Quicker Response Times</span>
+				
+				
+			</h3>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>Live video monitoring gives authorities confirmation that there is an event happening in real time, which results in much quicker response times since the police raise the priority level when they can verify an incident in progress.</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+		</div>
+	
+	<div class="fl-col-group fl-node-619d02744959f fl-col-group-custom-width" data-node="619d02744959f">
+				<div class="fl-col fl-node-619d027449779 fl-col-small" data-node="619d027449779">
+		<div class="fl-col-content fl-node-content"><div id="smartTitleWithNumbers" class="fl-module fl-module-pp-heading fl-node-619d0283274dd" data-node="619d0283274dd">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<h3 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">07</span>
+	
+												<span class="title-text pp-secondary-title">Insurance Savings</span>
+				
+				
+			</h3>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>Video monitoring solutions are often accepted as a valid guard replacement within the security warranties for insurance policies. Like alarm systems, any additional security measures such as virtual video surveillance may reduce your property’s premium.</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-619d02744977d fl-col-small" data-node="619d02744977d">
+		<div class="fl-col-content fl-node-content"><div id="smartTitleWithNumbers" class="fl-module fl-module-pp-heading fl-node-619d027ab40ad" data-node="619d027ab40ad">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<h3 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">08</span>
+	
+												<span class="title-text pp-secondary-title">System Health Check</span>
+				
+				
+			</h3>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>Video monitoring solutions are often accepted as a valid guard replacement within the security warranties for insurance policies. Like alarm systems, any additional security measures such as virtual video surveillance may reduce your property’s premium.</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+		</div>
+	
+	<div class="fl-col-group fl-node-619d0291efeb6 fl-col-group-custom-width" data-node="619d0291efeb6">
+				<div class="fl-col fl-node-619d0291f0003 fl-col-small" data-node="619d0291f0003">
+		<div class="fl-col-content fl-node-content"><div id="smartTitleWithNumbers" class="fl-module fl-module-pp-heading fl-node-619d02a19a1c4" data-node="619d02a19a1c4">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<h3 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">09</span>
+	
+												<span class="title-text pp-secondary-title">Design And Installation</span>
+				
+				
+			</h3>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>We specialize in turnkey solutions including the design, installation and support of surveillance services and equipment. Whether you require a completely new system to be designed from scratch or want to add a few new cameras to your existing system, we can tailor a solution that works for you.</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-619d0291f0006 fl-col-small" data-node="619d0291f0006">
+		<div class="fl-col-content fl-node-content"><div id="smartTitleWithNumbers" class="fl-module fl-module-pp-heading fl-node-619d0298e04f3" data-node="619d0298e04f3">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center pp-dual-heading">
+			
+			<h3 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">10</span>
+	
+												<span class="title-text pp-secondary-title">Total Service</span>
+				
+				
+			</h3>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>We don’t just monitor your property, we also monitor your entire surveillance data network, including cameras and NVRs. Our multi-tiered Total Service offering provides you with unparalleled customer support.</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	<div id="customerTestimonialsSection" class="fl-row fl-row-full-width fl-row-bg-photo fl-node-619d0a46d80db curve-row-right-side" data-node="619d0a46d80db">
+		<div class="fl-row-content-wrap">
+							<div class="fl-row-content fl-row-fixed-width fl-node-content">
+			
+	<div class="fl-col-group fl-node-619d0a46d80d6" data-node="619d0a46d80d6">
+				<div class="fl-col fl-node-619d0a46d80d8 fl-col-has-cols" data-node="619d0a46d80d8">
+		<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-heading fl-node-619d0a46d80d9" data-node="619d0a46d80d9">
+		<div class="fl-module-content fl-node-content geot-module">
+			<h2 class="fl-heading">
+			<span class="fl-heading-text">Customer <br>Testimonials</span>
+		</h2>
+		</div>
+	</div>
+	
+	
+	<div class="fl-col-group fl-node-619e0f5331080 fl-col-group-nested fl-col-group-custom-width" data-node="619e0f5331080">
+				<div class="fl-col fl-node-619e0f5331208 fl-col-small" data-node="619e0f5331208">
+		<div class="fl-col-content fl-node-content">
+	<div id="customerTestimonialsModule" class="fl-module fl-module-pp-video-gallery fl-node-619d0a46d80da customer-testimonials-module-single" data-node="619d0a46d80da">
+		<div class="fl-module-content fl-node-content geot-module">
+			<div class="pp-video-gallery">
+	
+		
+		<div class="pp-video-gallery-items">
+					<div class="pp-video-gallery-item pp-video-has-overlay">
+				<div class="pp-video">
+	
+		<script type="text/html" class="pp-video-lightbox-content">
+			<div class="pp-video-container">
+				<div class="pp-fit-aspect-ratio">
+				<iframe class="pp-video-iframe" allowfullscreen allow="autoplay" src="https://www.youtube.com/embed/aciMnq428qw?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0" title="Hotel & Motel Security Systems Security Case Study - Mattamy Homes"></iframe>			</div>
+			</div>
+		</script>
+					
+						</div>
+			</div>
+								<div class="pp-video-gallery--spacer"></div>
+				</div>
+		</div>
+		</div>
+	</div>
+	
+	</div>
+	</div>
+				<div class="fl-col fl-node-619e0f533120c" data-node="619e0f533120c">
+		<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-pp-testimonials fl-node-619e0fe8ce7ca" data-node="619e0fe8ce7ca">
+		<div class="fl-module-content fl-node-content geot-module">
+			
+	<div class="pp-testimonials-wrap pp-testimonials-no-heading pp-testimonials-slider">
+			
+		<div class="pp-testimonials">
+			<div class="owl-carousel owl-theme owl-loaded owl-drag" tabindex="0">				
+				<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 459px;"><div class="owl-item active" style="width: 438.15px; margin-right: 20px;"><div class="pp-testimonial layout-1">
+											<div class="pp-content-wrapper" style="height: 201px;">
+																				<div class="pp-testimonials-content"><p>“We don’t have to price jobs higher to cover theft. We don’t have material going missing. We have our trades able to bring their materials ahead of schedule. We have them stored in open garages under the cameras and nothing goes missing anymore.”</p>
+	</div>
+																				<div class="pp-title-wrapper">
+																		<h3 class="pp-testimonials-title">– Scott Caulfield, Health &amp; Safety Rep</h3>
+																								</div>
+												</div>
+					</div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M25.1 247.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L64.7 256l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L25 264.5c-4.6-4.7-4.6-12.3.1-17z"></path></svg><span class="sr-only">Previous</span></button><button type="button" role="presentation" class="owl-next disabled"><svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M166.9 264.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L127.3 256 25.1 155.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"></path></svg><span class="sr-only">Next</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span><span class="sr-only">Testimonial Slide 1</span></button></div></div>	</div><!-- /.pp-testimonials -->
+		</div>
+		</div>
+	</div>
+	
+	</div>
+	</div>
+		</div>
+	</div>
+	</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div id="readyToGetStartedSection" class="fl-row fl-row-full-width fl-row-bg-photo fl-node-619e79f75cfc5 fl-animation fl-fade-up" data-node="619e79f75cfc5" data-animation-delay="0" data-animation-duration="1">
+		<div class="fl-row-content-wrap geot-row">
+							<div class="fl-row-content fl-row-fixed-width fl-node-content">
+				
+	<div class="fl-col-group fl-node-619e737e03cd8 fl-col-group-equal-height fl-col-group-align-center" data-node="619e737e03cd8">
+				<div class="fl-col fl-node-619e737e03cdb curve-clm" data-node="619e737e03cdb">
+		<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-pp-heading fl-node-619e737e03cdc" data-node="619e737e03cdc">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-heading-content">
+		<div class="pp-heading  pp-center">
+			
+			<h2 class="heading-title">
+	
+				
+				<span class="title-text pp-primary-title">Ready To Get Started?</span>
+	
+				
+				
+			</h2>
+	
+			
+		</div>
+	
+				<div class="pp-sub-heading">
+				<p>Contact our team today to start your free quote today!</p>		</div>
+		
+		</div>
+		</div>
+	</div>
+	<div id="requestAQuote" class="fl-module fl-module-button fl-node-619e737e03cdd white-curve" data-node="619e737e03cdd">
+		<div class="fl-module-content fl-node-content">
+			<div class="fl-button-wrap fl-button-width-auto fl-button-center">
+				<a href="" target="_self" class="fl-button" role="button">
+								<span class="fl-button-text">Get Free Quote</span>
+						</a>
+	</div>
+		</div>
+	</div>
+	</div>
+	</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	
+	</div>	</div><!-- .fl-post-content -->
+		
+	</article>
+	
+	<!-- .fl-post -->
+			</div>
+		</div>
+	</div>
+	
+	
+		</div><!-- .fl-page-content -->
+		<footer class="fl-builder-content fl-builder-content-8536 fl-builder-global-templates-locked" data-post-id="8536" data-type="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-61b36768b2028" data-node="61b36768b2028">
+		<div class="fl-row-content-wrap geot-row">
+							<div class="fl-row-content fl-row-fixed-width fl-node-content">
+				
+	<div class="fl-col-group fl-node-61b36768c39de" data-node="61b36768c39de">
+				<div class="fl-col fl-node-61b36768c3bf3" data-node="61b36768c3bf3">
+		<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-pp-modal-box fl-node-61b36768b14c8" data-node="61b36768b14c8">
+		<div class="fl-module-content fl-node-content geot-module">
+				
+		</div>
+	</div>
+	
+	</div>
+	</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5b48614dca49d" data-node="5b48614dca49d">
+		<div class="fl-row-content-wrap geot-row">
+							<div class="fl-row-content fl-row-fixed-width fl-node-content">
+				
+	<div class="fl-col-group fl-node-6192ab247e7d9 fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="6192ab247e7d9">
+				<div class="fl-col fl-node-6192ab247e8bd fl-col-small" data-node="6192ab247e8bd">
+		<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-6192ac049a93c" data-node="6192ac049a93c">
+		<div class="fl-module-content fl-node-content">
+			<div class="fl-photo fl-photo-align-left" itemscope="" itemtype="https://schema.org/ImageObject">
+		<div class="fl-photo-content fl-photo-img-svg">
+					<a href="/" target="_self" itemprop="url">
+					<img decoding="async" class="fl-photo-img wp-image-17792 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20305%2062'%3E%3C/svg%3E" alt="logo" itemprop="image" height="62" width="305" title="logo" data-lazy-src="https://stealthmonitoring.com/wp-content/uploads/2021/11/logo.svg"><noscript><img decoding="async" class="fl-photo-img wp-image-17792 size-full" src="https://stealthmonitoring.com/wp-content/uploads/2021/11/logo.svg" alt="logo" itemprop="image" height="62" width="305" title="logo"  /></noscript>
+					</a>
+						</div>
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-6192ab247e8c0 fl-col-small fl-visible-desktop-medium" data-node="6192ab247e8c0">
+		<div class="fl-col-content fl-node-content"></div>
+	</div>
+				<div class="fl-col fl-node-6192ab247e8c1 fl-col-small" data-node="6192ab247e8c1">
+		<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-pp-social-icons fl-node-6192ac617b539" data-node="6192ac617b539">
+		<div class="fl-module-content fl-node-content">
+			<div class="pp-social-icons pp-social-icons-horizontal">
+		<span class="pp-social-icon" itemscope="" itemtype="http://schema.org/Organization">
+			<link itemprop="url" href="https://stealthmonitoring.com">
+			<a itemprop="sameAs" href="https://www.linkedin.com/company/stealth-monitoring-inc-/" target="_blank" title="Linkedin" aria-label="Linkedin" role="button" rel="noopener">
+								<i class="fab fa-linkedin-in"></i>
+						</a>
+		</span>
+			<span class="pp-social-icon" itemscope="" itemtype="http://schema.org/Organization">
+			<link itemprop="url" href="https://stealthmonitoring.com">
+			<a itemprop="sameAs" href="https://www.facebook.com/stealthmonitoring/" target="_blank" title="Facebook" aria-label="Facebook" role="button" rel="noopener">
+								<i class="fab fa-facebook-f"></i>
+						</a>
+		</span>
+			<span class="pp-social-icon" itemscope="" itemtype="http://schema.org/Organization">
+			<link itemprop="url" href="https://stealthmonitoring.com">
+			<a itemprop="sameAs" href="https://twitter.com/stealthmonitor" target="_blank" title="Twitter" aria-label="Twitter" role="button" rel="noopener">
+								<i class="ua-icon ua-icon-twitter2"></i>
+						</a>
+		</span>
+			<span class="pp-social-icon" itemscope="" itemtype="http://schema.org/Organization">
+			<link itemprop="url" href="https://stealthmonitoring.com">
+			<a itemprop="sameAs" href="https://www.youtube.com/StealthMonitoring" target="_blank" title="Youtube" aria-label="Youtube" role="button" rel="noopener">
+								<i class="fab fa-youtube"></i>
+						</a>
+		</span>
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+		</div>
+	
+	<div class="fl-col-group fl-node-619b728a50bad fl-col-group-custom-width" data-node="619b728a50bad">
+				<div class="fl-col fl-node-619b728a50ceb fl-col-small" data-node="619b728a50ceb">
+		<div class="fl-col-content fl-node-content"><div id="footerMenu" class="fl-module fl-module-widget fl-node-619b725e7c43f dual-clm-menu" data-node="619b725e7c43f">
+		<div class="fl-module-content fl-node-content">
+			<div class="fl-widget">
+	<div class="widget widget_nav_menu"><h2 class="widgettitle">Services</h2><div class="menu-services-menu-footer-container"><ul id="menu-services-menu-footer" class="menu"><li id="menu-item-18267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18267"><a href="https://stealthmonitoring.com/services/live-video-monitoring-and-surveillance">Live Video Monitoring and Surveillance</a></li>
+	<li id="menu-item-18260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18260"><a href="https://stealthmonitoring.com/services/mobile-and-temporary-video-monitoring-surveillance">Mobile Video Monitoring</a></li>
+	<li id="menu-item-18262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18262"><a href="https://stealthmonitoring.com/services/solar-powered-video-monitoring-and-surveillance">Solar Powered Video Monitoring</a></li>
+	<li id="menu-item-33063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33063"><a href="https://stealthmonitoring.com/services/service-lane-monitoring">Service Lane Monitoring</a></li>
+	<li id="menu-item-18261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18261"><a href="https://stealthmonitoring.com/services/remote-concierge-and-security">Remote Concierge</a></li>
+	<li id="menu-item-18265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18265"><a href="https://stealthmonitoring.com/services/gate-security-access-control-and-entry-management">Gate &amp; Access Management</a></li>
+	<li id="menu-item-18263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18263"><a href="https://stealthmonitoring.com/services/crane-climbing-detection-security-system">Crane Climbing Detection</a></li>
+	<li id="menu-item-18277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18277"><a href="https://stealthmonitoring.com/services/video-surveillance-as-a-service">We Watch Your Cameras</a></li>
+	<li id="menu-item-18266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18266"><a href="https://stealthmonitoring.com/services/license-plate-recognition-camera-system">License Plate Recognition</a></li>
+	<li id="menu-item-18259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18259"><a href="https://stealthmonitoring.com/services/long-range-surveillance-security-camera-system">Long-Range Surveillance</a></li>
+	<li id="menu-item-18273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18273"><a href="https://stealthmonitoring.com/services/thermal-imaging-security-camera-system">Thermal Imaging</a></li>
+	<li id="menu-item-18274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18274"><a href="https://stealthmonitoring.com/services/time-lapse-video-photography-solutions">Time Lapse</a></li>
+	<li id="menu-item-18276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18276"><a href="https://stealthmonitoring.com/services/video-review-investigation-and-analysis">Video Review &amp; Analysis</a></li>
+	<li id="menu-item-18272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18272"><a href="https://stealthmonitoring.com/services/security-camera-system-health-check">System Health Check</a></li>
+	<li id="menu-item-18264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18264"><a href="https://stealthmonitoring.com/services/security-system-design-and-installation">Design &amp; Installation</a></li>
+	<li id="menu-item-18275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18275"><a href="https://stealthmonitoring.com/services/total-service-and-support">Total Service</a></li>
+	<li id="menu-item-33064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33064"><a href="https://stealthmonitoring.com/services/intrusion-dectection-alarms">Intrusion Dectection Alarms</a></li>
+	</ul></div></div></div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-619b728a50cee fl-col-has-cols" data-node="619b728a50cee">
+		<div class="fl-col-content fl-node-content">
+	<div class="fl-col-group fl-node-619b72bb4616f fl-col-group-nested fl-col-group-custom-width" data-node="619b72bb4616f">
+				<div class="fl-col fl-node-619b72bb46207 fl-col-small" data-node="619b72bb46207">
+		<div class="fl-col-content fl-node-content"><div id="footerMenu" class="fl-module fl-module-widget fl-node-619b72c869ccd" data-node="619b72c869ccd">
+		<div class="fl-module-content fl-node-content">
+			<div class="fl-widget">
+	<div class="widget widget_nav_menu"><h2 class="widgettitle">Company</h2><div class="menu-company-menu-footer-container"><ul id="menu-company-menu-footer" class="menu"><li id="menu-item-18278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18278"><a href="https://stealthmonitoring.com/why-stealth">Why Stealth?</a></li>
+	<li id="menu-item-18280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18280"><a href="https://stealthmonitoring.com/careers">Careers</a></li>
+	<li id="menu-item-18281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18281"><a href="https://stealthmonitoring.com/stealth-labs">Stealth Labs</a></li>
+	<li id="menu-item-18282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18282"><a href="https://stealthmonitoring.com/news-and-events">News &amp; Events</a></li>
+	<li id="menu-item-18283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18283"><a href="https://stealthmonitoring.com/live-remote-video-surveillance-locations">Locations</a></li>
+	<li id="menu-item-18284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18284"><a href="https://stealthmonitoring.com/police-relations">Police Relations</a></li>
+	</ul></div></div></div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-619b72bb46209 fl-col-small" data-node="619b72bb46209">
+		<div class="fl-col-content fl-node-content"><div id="footerMenu" class="fl-module fl-module-widget fl-node-619b724a1fb44" data-node="619b724a1fb44">
+		<div class="fl-module-content fl-node-content">
+			<div class="fl-widget">
+	<div class="widget widget_nav_menu"><h2 class="widgettitle">Resources</h2><div class="menu-resources-menu-footer-container"><ul id="menu-resources-menu-footer" class="menu"><li id="menu-item-26786" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26786"><a href="/resource-center?_type=videos">Videos</a></li>
+	<li id="menu-item-26787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26787"><a href="/resource-center?_type=white-papers">White Papers</a></li>
+	<li id="menu-item-26788" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26788"><a href="/resource-center?_type=case-studies">Case Studies</a></li>
+	<li id="menu-item-26789" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26789"><a href="/resource-center?_type=infographics">Infographics</a></li>
+	<li id="menu-item-26790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26790"><a href="/resource-center?_type=brochures">Brochures</a></li>
+	<li id="menu-item-26791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26791"><a href="https://stealthmonitoring.com/security-blog">Blog</a></li>
+	</ul></div></div></div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-bpocxrez6uaw fl-col-small" data-node="bpocxrez6uaw">
+		<div class="fl-col-content fl-node-content">
+	<div id="footerMenu" class="fl-module fl-module-widget fl-node-623z1vj8gdhb" data-node="623z1vj8gdhb">
+		<div class="fl-module-content fl-node-content geot-module">
+			<div class="fl-widget">
+	<div class="widget widget_nav_menu"><h2 class="widgettitle">Industries</h2><div class="menu-industries-menu-footer-container"><ul id="menu-industries-menu-footer" class="menu"><li id="menu-item-18382" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-18035 current_page_item menu-item-18382"><a href="https://stealthmonitoring.com/surveillance-solution/gas-station-plaza-parking-lots" aria-current="page">Hotel & Motel Security Systems</a></li>
+	<li id="menu-item-18383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18383"><a href="https://stealthmonitoring.com/surveillance-solution/multifamily-residential-and-apartments">Multi-Family Residential Security Solutions</a></li>
+	<li id="menu-item-18384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18384"><a href="https://stealthmonitoring.com/surveillance-solution/shopping-centers-and-retail">Shopping Centers Security Solutions</a></li>
+	<li id="menu-item-18385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18385"><a href="https://stealthmonitoring.com/surveillance-solution/automotive-dealerships">Automotive Dealership Security Solutions</a></li>
+	<li id="menu-item-18386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18386"><a href="https://stealthmonitoring.com/surveillance-solution/office-buildings-and-commerical-property">Office Building Security Solutions</a></li>
+	<li id="menu-item-18387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18387"><a href="https://stealthmonitoring.com/surveillance-solution/industrial-and-manufacturing">Industrial &amp; Manufacturing Security Solutions</a></li>
+	<li id="menu-item-18388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18388"><a href="https://stealthmonitoring.com/surveillance-solution/scrap-metal-recycling-and-waste">Scrap Metal &amp; Recycling Security Solutions</a></li>
+	<li id="menu-item-18389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18389"><a href="https://stealthmonitoring.com/surveillance-solution/energy-utilities-solar">Energy Security Solutions</a></li>
+	<li id="menu-item-18390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18390"><a href="https://stealthmonitoring.com/surveillance-solution/transportation-logistics">Distribution &amp; Logistics</a></li>
+	<li id="menu-item-18391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18391"><a href="https://stealthmonitoring.com/surveillance-solution/self-storage">Self-Storage</a></li>
+	<li id="menu-item-18392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18392"><a href="https://stealthmonitoring.com/surveillance-solution/cannabis-marijuana">Cannabis</a></li>
+	<li id="menu-item-18393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18393"><a href="https://stealthmonitoring.com/surveillance-solution/metals-and-mining">Metals &amp; Mining Security Solutions</a></li>
+	</ul></div></div></div>
+		</div>
+	</div>
+	
+	</div>
+	</div>
+		</div>
+	</div>
+	</div>
+		</div>
+	
+	<div class="fl-col-group fl-node-3ifagvcen6x7" data-node="3ifagvcen6x7">
+				<div class="fl-col fl-node-u3ztb8g24vfe" data-node="u3ztb8g24vfe">
+		<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-6192aaf193acf" data-node="6192aaf193acf">
+		<div class="fl-module-content fl-node-content">
+			<div class="fl-separator"></div>
+		</div>
+	</div>
+	</div>
+	</div>
+		</div>
+	
+	<div class="fl-col-group fl-node-fruadxi69lo8 fl-col-group-equal-height fl-col-group-align-top fl-col-group-custom-width" data-node="fruadxi69lo8">
+				<div class="fl-col fl-node-x3qzvjflac9p" data-node="x3qzvjflac9p">
+		<div class="fl-col-content fl-node-content"><div id="copyRightMenu" class="fl-module fl-module-widget fl-node-619b7359b6302" data-node="619b7359b6302">
+		<div class="fl-module-content fl-node-content">
+			<div class="fl-widget">
+	<div class="widget widget_nav_menu"><h2 class="widgettitle">Copyright Menu</h2><div class="menu-copyright-menu-container"><ul id="menu-copyright-menu" class="menu"><li id="menu-item-17831" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17831"><a href="https://stealthmonitoring.com/terms-of-use">Terms of Use</a></li>
+	<li id="menu-item-17832" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-17832"><a href="https://stealthmonitoring.com/privacy-policy">Privacy Policy</a></li>
+	<li id="menu-item-17830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17830"><a href="https://stealthmonitoring.com/aoda-policy">Accessibility</a></li>
+	<li id="menu-item-17833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17833"><a href="https://stealthmonitoring.com/sitemap">Sitemap</a></li>
+	</ul></div></div></div>
+		</div>
+	</div>
+	<div class="fl-module fl-module-rich-text fl-node-5b48614dca457" data-node="5b48614dca457">
+		<div class="fl-module-content fl-node-content">
+			<div class="fl-rich-text">
+		<p>© 2023 Stealth Monitoring, All Rights Reserved</p>
+	</div>
+		</div>
+	</div>
+	</div>
+	</div>
+				<div class="fl-col fl-node-ju0td9bxekw4 fl-col-small" data-node="ju0td9bxekw4">
+		<div class="fl-col-content fl-node-content">
+	<div id="bottomContactBtn" class="fl-module fl-module-button fl-node-6192be5e48b04 red-curve" data-node="6192be5e48b04">
+		<div class="fl-module-content fl-node-content geot-module">
+			<div class="fl-button-wrap fl-button-width-auto fl-button-right">
+				<a href="/contact" target="_self" class="fl-button" role="button">
+								<span class="fl-button-text">Contact Us</span>
+						</a>
+	</div>
+		</div>
+	</div>
+	
+	</div>
+	</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	
+	</footer>	</div><!-- .fl-page -->
+			<script>
+			( function ( body ) {
+				'use strict';
+				body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+			} )( document.body );
+			</script>
+			<a href="#" id="fl-to-top"><span class="sr-only">Scroll To Top</span><i class="fas fa-chevron-up" aria-hidden="true"></i></a><script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><!-- Geotargeting GeoLocation START -->
+			<div class="geotloc_overlay_box" style="display: none;">
+				<div class="geotloc_overlay_container">
+					<div class="geotloc_overlay_remove"></div>
+					<div class="geotloc_overlay_text">
+						<p>Please share your location to continue.</p>
+						<p class="geotloc_overlay_help">Check our <a href="https://geotargetingwp.com/docs/geotargetingwp/how-to-share-location" rel="noreferrer noopener nofollow">help guide</a> for more info.</p>
+					</div>
+					<div class="geotloc_overlay_img">
+						<img width="223" height="194" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20223%20194'%3E%3C/svg%3E" alt="share your location" data-lazy-src="https://stealthmonitoring.com/wp-content/plugins/geotargetingwp/public/images/give_consent.png"><noscript><img width="223" height="194" src="https://stealthmonitoring.com/wp-content/plugins/geotargetingwp/public/images/give_consent.png" alt="share your location"/></noscript>
+					</div>
+				</div>
+			</div>
+			<!-- Geotargeting GeoLocation END --><script data-minify="1" src="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/metronet-profile-picture/js/mpp-frontend.js?ver=1681400561" id="mpp_gutenberg_tabs-js" defer=""></script>
+	<script src="https://stealthmonitoring.com/wp-content/plugins/bb-plugin/js/jquery.waypoints.min.js?ver=2.6.1.2" id="jquery-waypoints-js" defer=""></script>
+	<script src="https://stealthmonitoring.com/wp-content/plugins/bb-plugin/js/jquery.fitvids.min.js?ver=1.2" id="jquery-fitvids-js" defer=""></script>
+	<script src="https://stealthmonitoring.com/wp-content/plugins/bbpowerpack/assets/js/jquery.fancybox.min.js?ver=3.5.7" id="pp-jquery-fancybox-js" defer=""></script>
+	<script src="https://stealthmonitoring.com/wp-content/plugins/bbpowerpack/assets/js/isotope.pkgd.min.js?ver=3.0.1" id="jquery-isotope-js" defer=""></script>
+	<script src="https://stealthmonitoring.com/wp-content/plugins/bbpowerpack/assets/js/owl.carousel.min.js?ver=2.26.4" id="pp-owl-carousel-js" defer=""></script>
+	<script data-minify="1" src="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/18035-layout.js?ver=1681401814" id="fl-builder-layout-18035-js" defer=""></script>
+	<script id="geot-js-js-extra">
+	var geot = {"ajax_url":"https:\/\/stealthmonitoring.com\/wp-admin\/admin-ajax.php","ajax":"","pid":"18035","is_archive":"","is_search":"","is_singular":"1","is_front_page":"","is_category":"","is_page":"1","is_single":"","disable_remove_on_singular":"1","is_builder":"","has_geo_posts":"","dropdown_search":"","dropdown_redirect":"","elementor_popup":"1","hide_class":"","hide_override_class":"","remove_class":"","remove_override_class":"","disable_console":"","geoloc_enable":"by_ip","geoloc_force":"","geoloc_fail":"Geolocation is not supported by this browser"};
+	</script>
+	<script data-minify="1" src="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/geotargetingwp/public/js/geotarget-public.js?ver=1681400561" id="geot-js-js" defer=""></script>
+	<script src="https://stealthmonitoring.com/wp-content/plugins/geotargetingwp/public/js/min/selectize.min.js?ver=3.4.2.3" id="geot-slick-js" defer=""></script>
+	<script src="https://stealthmonitoring.com/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.6.1.2" id="jquery-throttle-js" defer=""></script>
+	<script data-minify="1" src="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/f77a962d46657429f92fab978458d8dd-layout-bundle.js?ver=1681400584" id="fl-builder-layout-bundle-f77a962d46657429f92fab978458d8dd-js" defer=""></script>
+	<script id="rocket-browser-checker-js-after">
+	"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+	</script>
+	<script id="rocket-preload-links-js-extra">
+	var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/stealthmonitoring.com","onHoverDelay":"100","rateThrottle":"3"};
+	</script>
+	<script id="rocket-preload-links-js-after">
+	(function() {
+	"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+	}());
+	</script>
+	<script src="https://stealthmonitoring.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2" id="hoverIntent-js" defer=""></script>
+	<script id="megamenu-js-extra">
+	var megamenu = {"timeout":"300","interval":"100"};
+	</script>
+	<script data-minify="1" src="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=1681400561" id="megamenu-js" defer=""></script>
+	<script data-minify="1" src="https://stealthmonitoring.com/wp-content/cache/min/1/wp-content/plugins/megamenu-pro/assets/public.js?ver=1681400561" id="megamenu-pro-js" defer=""></script>
+	<script src="https://stealthmonitoring.com/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.6.1.2" id="jquery-magnificpopup-js" defer=""></script>
+	<script id="fl-automator-js-extra">
+	var themeopts = {"medium_breakpoint":"992","mobile_breakpoint":"768"};
+	</script>
+	<script src="https://stealthmonitoring.com/wp-content/themes/bb-theme/js/theme.min.js?ver=1.7.12.1" id="fl-automator-js" defer=""></script>
+	<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+	if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+	images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+	if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="https://stealthmonitoring.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script>
+	<script>
+		// Added Header BG When Mega Sub-menu is opened
+		jQuery(function($) {
+			let stickyHeader = jQuery('#main-header .fl-row-content-wrap');
+			jQuery('li.mega-menu-item').on('open_panel', function() {
+				stickyHeader.addClass('clickable-header-bg');
+			});
+			jQuery('li.mega-menu-item').on('close_panel', function() {
+				stickyHeader.removeClass('clickable-header-bg');
+			});
+		});
+	
+		// Google Search Engine
+		jQuery( window ).load(function() {
+			googleSearchEngine = jQuery("input.gsc-input");
+			jQuery(googleSearchEngine).attr("placeholder","Search Stealth Monitoring…");
+		});
+	
+		// Added Attribute In Each Download PDF Button
+		jQuery(document).ready(function(){
+			var getDownloadPdfCta = jQuery('#downloadFileBtn a.pp-button');
+			jQuery(getDownloadPdfCta).attr('target','_blank');	
+		});	
+		
+		// Vertical Tabs Function for Industry pages
+		jQuery(document).ready(function(){
+			let verticalTabsSection = jQuery('#verticalTabsSection .fl-row-content-wrap');
+	
+			// Tab Image Src Global Path
+			let tabImgGP = '.pp-tab-label-inner .pp-tab-label-wrap .pp-tab-icon img';
+	
+			// Get tab image src and set its section background
+			jQuery('#verticalTabsModule .pp-tabs-label').click(function() {
+				var checkTabActiveCls = jQuery('#verticalTabsModule .pp-tabs-label').hasClass('pp-tab-active');
+				if (checkTabActiveCls) {
+					var tabOne = jQuery(this).find(tabImgGP).attr('src');
+					jQuery(verticalTabsSection).css('background-image', 'url(' + tabOne + ')');
+				}
+			});
+		});	
+	
+		// Get GF Form Select Element
+		let getGfiSelect = document.querySelectorAll('.gform_wrapper .gfield select');
+	
+		// Execute: If form available on the page :: JavaScript
+		if (getGfiSelect !== null) {
+			// Select options Onchange Event
+			getGfiSelect.forEach(gfs => {
+				gfs.addEventListener('change', () => {
+					if (gfs.value == '') {
+						gfs.style.color = 'rgba(10, 34, 39, 0.60)';
+					} else {
+						gfs.style.color = '#1d242c';
+					}
+				});
+				if (gfs.value == '') {
+					gfs.style.color = 'rgba(10, 34, 39, 0.60)';
+				} else {
+					gfs.style.color = '#1d242c';
+				}
+			});	
+		}
+	</script>
+	
+	
+	
+	
+	<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script><div id="modal-61b36768b14c8" class="pp-modal-wrap has-overlay-animation" role="dialog" aria-labelledby="modal-title-61b36768b14c8">
+		<div class="pp-modal-container">
+					<div class="pp-modal layout-standard">
+							<div class="pp-modal-body">
+													<div class="pp-modal-header">
+												<h2 id="modal-title-61b36768b14c8" class="pp-modal-title">Request a Quote</h2>																<div class="pp-modal-close box-top-right" role="button" tabindex="0" aria-label="Close">
+								<div class="bar-wrap" aria-hidden="true">
+									<span class="bar-1"></span>
+									<span class="bar-2"></span>
+								</div>
+							</div>
+															</div>
+									<div class="pp-modal-content">
+						<div class="pp-modal-content-inner">
+							<div data-formid="1037" data-success="/thank-you-for-contacting-us">
+	<script data-minify="1" src="https://stealthmonitoring.com/wp-content/cache/min/1/js/forms2/js/forms2.min.js?ver=1681400561"></script> 
+	<form id="mktoForm_1037" class="request-a-quote mktoForm mktoHasWidth mktoLayoutLeft" novalidate="novalidate" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 440px;"><style type="text/css">.mktoForm .mktoButtonWrap.mktoInset .mktoButton {
+	color:#000;
+	background:#fff;
+	border:1px solid #aeb0b6;
+	padding:0.4em 1em;
+	font-size:1em;
+	box-shadow: 1px 1px 6px 1px #ccc;
+	background-color:#f5f5f5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#dfdfdf));
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #dfdfdf);
+	background-image: -moz-linear-gradient(top, #f5f5f5, #dfdfdf);
+	background-image: linear-gradient(to bottom, #f5f5f5, #dfdfdf);
+	}
+	.mktoForm .mktoButtonWrap.mktoInset .mktoButton:hover {
+	border:1px solid #999;
+	}
+	.mktoForm .mktoButtonWrap.mktoInset .mktoButton:focus {
+	outline:none;
+	border:1px solid #999;
+	}
+	.mktoForm .mktoButtonWrap.mktoInset .mktoButton:active{
+	box-shadow:inset 1px 1px 6px 1px #ccc;
+	background-color:#dfdfdf;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#f5f5f5));
+	background-image: -webkit-linear-gradient(top, #dfdfdf, #f5f5f5);
+	background-image: -moz-linear-gradient(top, #dfdfdf, #f5f5f5);
+	background-image: linear-gradient(to bottom, #dfdfdf, #f5f5f5);
+	}
+	</style><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="FirstName" id="LblFirstName" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">First Name:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="FirstName" name="FirstName" maxlength="255" aria-labelledby="LblFirstName InstructFirstName" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;"><span id="InstructFirstName" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="LastName" id="LblLastName" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Last Name:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="LastName" name="LastName" maxlength="255" aria-labelledby="LblLastName InstructLastName" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;"><span id="InstructLastName" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Company" id="LblCompany" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Company:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Company" name="Company" maxlength="255" aria-labelledby="LblCompany InstructCompany" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;"><span id="InstructCompany" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Email" id="LblEmail" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Email:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Email" name="Email" maxlength="255" aria-labelledby="LblEmail InstructEmail" type="email" class="mktoField mktoEmailField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;"><span id="InstructEmail" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Phone" id="LblPhone" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Phone:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Phone" name="Phone" maxlength="255" aria-labelledby="LblPhone InstructPhone" type="tel" class="mktoField mktoTelField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;"><span id="InstructPhone" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="State" id="LblState" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">State/Province:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="State" name="State" aria-labelledby="LblState InstructState" class="mktoField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;"><option value="">Select State/Province</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Alberta">Alberta</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="British Columbia">British Columbia</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Manitoba">Manitoba</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Brunswick">New Brunswick</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="Newfoundland and Labrador">Newfoundland and Labrador</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Northwest Territories">Northwest Territories</option><option value="Nova Scotia">Nova Scotia</option><option value="Nunavut">Nunavut</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Ontario">Ontario</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Prince Edward Island">Prince Edward Island</option><option value="Puerto Rico">Puerto Rico</option><option value="Quebec">Quebec</option><option value="Rhode Island">Rhode Island</option><option value="Saskatchewan">Saskatchewan</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option><option value="Yukon">Yukon</option></select><span id="InstructState" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Industry" id="LblIndustry" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Industry:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Industry" name="Industry" aria-labelledby="LblIndustry InstructIndustry" class="mktoField mktoHasWidth mktoRequired" aria-required="true" style="width: 155px;"><option value="">Select Industry</option><option value="Automotive">Automotive</option><option value="Cannabis">Cannabis</option><option value="Commercial Real Estate">Commercial Real Estate</option><option value="Hotel & Motel Security Systems">Hotel & Motel Security Systems</option><option value="Education">Education</option><option value="Energy/Utilities">Energy/Utilities</option><option value="Fueling">Fueling</option><option value="Industrial-Heavy">Industrial-Heavy</option><option value="Industrial-Light">Industrial-Light</option><option value="Mining">Mining</option><option value="Multi-Family">Multi-Family</option><option value="Office">Office</option><option value="Research">Research</option><option value="Scrap Metals/Recycling/Waste">Scrap Metals/Recycling/Waste</option><option value="Shopping Center">Shopping Center</option><option value="Storage">Storage</option><option value="Transportation/Logistics">Transportation/Logistics</option></select><span id="InstructIndustry" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="commentCapture" id="LblcommentCapture" class="mktoLabel mktoHasWidth" style="width: 135px;"><div class="mktoAsterix">*</div><span style="color: #ffffff;">Comments:</span></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><textarea id="commentCapture" name="commentCapture" rows="3" aria-labelledby="LblcommentCapture InstructcommentCapture" class="mktoField mktoHasWidth" maxlength="2000" style="width: 284px;"></textarea><span id="InstructcommentCapture" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoButtonRow"><span class="mktoButtonWrap mktoInset" style="margin-left: 154px;"><button type="submit" class="mktoButton">Submit</button></span></div><input type="hidden" name="formid" class="mktoField mktoFieldDescriptor" value="1037"><input type="hidden" name="munchkinId" class="mktoField mktoFieldDescriptor" value="947-QOJ-252"></form>
+	<script>
+		 MktoForms2.loadForm("//app-sj24.marketo.com", "947-QOJ-252", 1037, function(form) {
+				form.onSuccess(function(values, followUpUrl) {
+					location.href = "/thank-you-for-contacting-us";
+					return false;
+				});
+	
+				if (document.getElementsByName('FirstName').length) {
+					document.getElementsByName('FirstName')[0].placeholder = 'First Name';
+				}
+				if (document.getElementsByName('LastName').length) {
+					document.getElementsByName('LastName')[0].placeholder = 'Last Name';
+				}
+				if (document.getElementsByName('Company').length) {
+					document.getElementsByName('Company')[0].placeholder = 'Company';
+				}
+				if (document.getElementsByName('Email').length) {
+					document.getElementsByName('Email')[0].placeholder = 'Email';
+				}
+				if (document.getElementsByName('Phone').length) {
+					document.getElementsByName('Phone')[0].placeholder = 'Phone';
+				}
+				if (document.getElementsByName('Title').length) {
+					document.getElementsByName('Title')[0].placeholder = 'Title';
+				}
+				if (document.getElementsByName('commentCapture').length) {
+					document.getElementsByName('commentCapture')[0].placeholder = 'Comments';
+				}
+			});
+	</script>
+	</div>					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pp-modal-overlay"></div>
+	</div></div><div id="mktoStyleLoaded" style="display: none; border-top-color: rgb(18, 52, 86);"></div><div id="goog-gt-" class="skiptranslate VIpgJd-yAWNEb-L7lbkb" dir="ltr"><div style="padding: 8px;"><div><div class="VIpgJd-yAWNEb-l4eHX"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div style="padding: 8px; float: left; width: 100%;"><h1 class="VIpgJd-yAWNEb-r4nke VIpgJd-yAWNEb-mrxPge">Original text</h1></div><div style="padding: 8px;"><div class="VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class="VIpgJd-yAWNEb-cGMI2b" style="padding: 8px;"><div class="VIpgJd-yAWNEb-Z0Arqf-PLDbbf"><span class="VIpgJd-yAWNEb-Z0Arqf-hSRGPd">Contribute a better translation</span></div><div class="VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class="VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style="display: none;"></div></div><div id="mktoStyleLoaded" style="display: none; border-top-color: rgb(18, 52, 86);"></div><div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><form novalidate="novalidate" class="mktoForm mktoHasWidth mktoLayoutLeft" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); visibility: hidden; position: absolute; top: -500px; left: -1000px; width: 1489px;"></form><form class="request-a-quote mktoForm mktoHasWidth mktoLayoutLeft" novalidate="novalidate" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); visibility: hidden; position: absolute; top: -500px; left: -1000px; width: 1489px;"></form><table cellspacing="0" cellpadding="0" role="presentation" class="gstl_50 gssb_c" style="width: 783px; display: none; top: 74px; position: absolute; left: 10px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><iframe name="mktoFormsXDIframe0.11420002039449373" id="MktoForms2XDIframe" style="display: none;" src="https://app-sj24.marketo.com/index.php/form/XDFrame"></iframe></body></html>
