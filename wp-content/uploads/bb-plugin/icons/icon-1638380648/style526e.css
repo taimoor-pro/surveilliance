@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Stealth-Monitoring-Fonts';
-  src:  url('fonts/Stealth-Monitoring-Fontsf0d8.eot?geeu23');
-  src:  url('fonts/Stealth-Monitoring-Fontsf0d8.eot?geeu23#iefix') format('embedded-opentype'),
-    url('fonts/Stealth-Monitoring-Fontsf0d8.ttf?geeu23') format('truetype'),
-    url('fonts/Stealth-Monitoring-Fontsf0d8.woff?geeu23') format('woff'),
-    url('fonts/Stealth-Monitoring-Fontsf0d8.svg?geeu23#Stealth-Monitoring-Fonts') format('svg');
+  font-family: 'Alasar Survellience-Monitoring-Fonts';
+  src:  url('fonts/Alasar Survellience-Monitoring-Fontsf0d8.eot?geeu23');
+  src:  url('fonts/Alasar Survellience-Monitoring-Fontsf0d8.eot?geeu23#iefix') format('embedded-opentype'),
+    url('fonts/Alasar Survellience-Monitoring-Fontsf0d8.ttf?geeu23') format('truetype'),
+    url('fonts/Alasar Survellience-Monitoring-Fontsf0d8.woff?geeu23') format('woff'),
+    url('fonts/Alasar Survellience-Monitoring-Fontsf0d8.svg?geeu23#Alasar Survellience-Monitoring-Fonts') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Stealth-Monitoring-Fonts' !important;
+  font-family: 'Alasar Survellience-Monitoring-Fonts' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
